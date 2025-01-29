@@ -21,6 +21,15 @@ def show_dropdown(button, options):
     # Show the menu at the button's location with a slight offset if necessary
     menu.post(x, y)
 
+# Function to create buttons within each group
+def create_button(frame, label, options, bg_color, row, column):
+    # Create the button
+    button = tk.Button(frame, text=label, bg=bg_color)
+    button.grid(row=row, column=column, padx=5, pady=5, sticky="w")
+
+    # Define the command for the button to show the dropdown menu
+    button.config(command=lambda opts=options, btn=button: show_dropdown(btn, opts))
+
 # Define button groups with their corresponding dropdown options
 button_groups = [
     # 1st group
@@ -456,23 +465,36 @@ text_editor.grid(row=0, column=0, columnspan=3, pady=10, padx=10, sticky="ew")
 # Enable "Ctrl + Z" for undo action
 root.bind("<Control-z>", lambda event: text_editor.edit_undo())
 
-# Function to create buttons within each group
-def create_button(frame, label, options, bg_color, row, column):
-    # Create the button
-    button = tk.Button(frame, text=label, bg=bg_color)
-    button.grid(row=row, column=column, padx=5, pady=5, sticky="w")
+# Create a canvas and scrollbar for the groups
+canvas = tk.Canvas(root)
+scrollbar = ttk.Scrollbar(root, orient="vertical", command=canvas.yview)
+scrollable_frame = ttk.Frame(canvas)
 
-    # Define the command for the button to show the dropdown menu
-    button.config(command=lambda opts=options, btn=button: show_dropdown(btn, opts))
+# Configure the canvas and scrollbar
+scrollable_frame.bind(
+    "<Configure>",
+    lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+)
+canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+canvas.configure(yscrollcommand=scrollbar.set)
+
+# Pack the canvas and scrollbar
+canvas.grid(row=1, column=0, columnspan=2, sticky="nsew")
+scrollbar.grid(row=1, column=2, sticky="ns")
+
+# Configure grid weights to make the layout responsive
+root.grid_rowconfigure(1, weight=1)
+root.grid_columnconfigure(0, weight=1)
 
 # Create groups dynamically
-row_offset = 1
-column_offset = 0
+max_columns = 2  # Number of columns for groups
+current_row = 0
+current_column = 0
 
 for group in button_groups:
     # Create a frame for the group
-    frame = tk.Frame(root, bg=group["bg_color"], padx=10, pady=5)
-    frame.grid(row=row_offset, column=column_offset, padx=5, pady=5, sticky="nsew")
+    frame = tk.Frame(scrollable_frame, bg=group["bg_color"], padx=10, pady=5)
+    frame.grid(row=current_row, column=current_column, padx=5, pady=5, sticky="nsew")
 
     # Add a label for the group
     label = tk.Label(frame, text=group["name"], bg=group["bg_color"], font=("Arial", 12, "bold"))
@@ -509,15 +531,11 @@ for group in button_groups:
 
             button_row = sub_button_row + 1
 
-    column_offset += 1
-    if column_offset > 2:  # Adjust the number of columns as needed
-        column_offset = 0
-        row_offset += 1
-
-# Configure grid weights to make the layout responsive
-root.grid_columnconfigure(0, weight=1)
-root.grid_columnconfigure(1, weight=1)
-root.grid_columnconfigure(2, weight=1)
+    # Update row and column for the next group
+    current_column += 1
+    if current_column >= max_columns:
+        current_column = 0
+        current_row += 1
 
 # Run the Tkinter event loop
 root.mainloop()

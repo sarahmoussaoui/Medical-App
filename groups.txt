@@ -41,16 +41,16 @@ group "INFLAMMATION" contains:
     - modere has dropdown menu of "option1", "option2", etc..:
   
   - sub-groupe "5-6/10" contains buttons:
-    - nulle has dropdown menu of "option1", "option2", etc..:
+    - moyen abondance has dropdown menu of "option1", "option2", etc..:
   
   - sub-groupe "6-7/10" contains buttons:
-    - nulle has dropdown menu of "option1", "option2", etc..:
+    - importante has dropdown menu of "option1", "option2", etc..:
 
   - sub-groupe ">7/10" contains buttons:
-    - nulle has dropdown menu of "option1", "option2", etc..:
+    - très importante has dropdown menu of "option1", "option2", etc..:
   
   - sub-groupe "modérée" contains buttons:
-    - nulle has dropdown menu of "option1", "option2", etc..:
+    - modérée polymorphe has dropdown menu of "option1", "option2", etc..:
 
 
 group "Fond" contains buttons:

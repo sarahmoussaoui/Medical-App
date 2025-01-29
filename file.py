@@ -1,89 +1,56 @@
 import tkinter as tk
-from tkinter import ttk
 
-# Function to insert text into the editor when a dropdown option is selected
-def insert_phrase(phrase):
-    text_editor.insert(tk.END, phrase + '\n')
+# Function to insert predefined text into the text editor
+def insert_text(text):
+    text_editor.insert(tk.END, text + "\n")
 
 # Create the main window
 root = tk.Tk()
-root.title("Text Editor with Dropdowns")
+root.title("Medical Report Editor")
+root.geometry("700x500")
 
-# Create the text editor widget
-text_editor = tk.Text(root, wrap=tk.WORD, height=20, width=80)
-text_editor.grid(row=0, column=0, padx=10, pady=10)
+# Create a text editor with undo functionality
+text_editor = tk.Text(root, height=10, width=80, undo=True)
+text_editor.pack(pady=10)
 
-# Add an Undo feature (Ctrl+Z)
-def undo_action(event=None):
-    text_editor.edit_undo()
+# Enable "Ctrl + Z" for undo action
+root.bind("<Control-z>", lambda event: text_editor.edit_undo())
 
-root.bind("<Control-z>", undo_action)
-
-# Function to create a dropdown menu for each button
-def create_dropdown(parent, options, label):
-    frame = ttk.Frame(parent, padding="5")
-    frame.grid(row=0, column=0, padx=10, pady=5, sticky="w")
-    
-    label = ttk.Label(frame, text=label, font=('Arial', 10, 'bold'))
-    label.grid(row=0, column=0, padx=5)
-    
-    combobox = ttk.Combobox(frame, values=options, width=20, state="readonly")
-    combobox.grid(row=0, column=1, padx=5)
-    combobox.set(options[0])  # Set default value
-    combobox.bind("<<ComboboxSelected>>", lambda event, phrase=combobox.get(): insert_phrase(phrase))
-
-    return frame
-
-# Group definitions with dropdown options
-groups = {
-    "EN-TETE": {
-        "FC 2lames": {
-            "exo endo": ["option1", "option2"],
-            "jonction endo": ["option1", "option2"],
-            "exojonc endo": ["option1", "option2"],
-            "exo jondo": ["option1", "option2"],
-            "OCE/OCI": ["option1", "option2"]
-        },
-        "FC 3lames": {
-            "exo jonction endo": ["option1", "option2"]
-        },
-        "FCV": {
-            "vagin exo endo": ["option1", "option2"]
-        },
-        "Autres": {
-            "Col seul": ["option1", "option2"],
-            "vagin seul": ["option1", "option2"]
-        }
+# Define button groups with colors
+button_groups = [
+    {
+        "name": "En-tete",
+        "bg_color": "yellow",
+        "buttons": [
+            ("Exo Endo", "Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "),
+            ("Jonction Endo", "L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "),
+            ("Exojonc Endo", "Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: ")
+        ]
     },
-    "INFLAMMATION": {
-        "0/10": {
-            "nulle": ["option1", "option2"]
-        },
-        "1-2/10": {
-            "faible": ["option1", "option2"]
-        },
-        # Add other subgroups similarly...
-    },
-    # Define other groups similarly...
-}
+    {
+        "name": "Autre Groupe",  # Example second group
+        "bg_color": "lightblue",
+        "buttons": [
+            ("HPV faible", "Conclusion : Présence de quelques signes d'HPV (lésion intra-épithéliale de bas grade)."),
+            ("HPV élevé", "Conclusion : Présence de signes d'HPV à haut risque (lésion intra-épithéliale de haut grade)."),
+            ("Normal", "Conclusion : Aucune anomalie détectée.")
+        ]
+    }
+]
 
-# Creating the groups with dropdowns
-group_row = 0
-for group_name, subgroups in groups.items():
-    group_frame = ttk.LabelFrame(root, text=group_name, relief="solid", padding="5")
-    group_frame.grid(row=group_row, column=1, padx=10, pady=10)
-    
-    subgroup_row = 0
-    for subgroup_name, buttons in subgroups.items():
-        subgroup_frame = ttk.LabelFrame(group_frame, text=subgroup_name, relief="flat", padding="5")
-        subgroup_frame.grid(row=subgroup_row, column=0, padx=10, pady=5)
-        
-        for button_name, options in buttons.items():
-            create_dropdown(subgroup_frame, options, button_name)
-        
-        subgroup_row += 1
-    
-    group_row += 1
+# Create groups dynamically
+for group in button_groups:
+    # Create a frame for the group
+    frame = tk.Frame(root, bg=group["bg_color"], padx=10, pady=5)
+    frame.pack(fill="x", padx=5, pady=5)
 
-# Start the Tkinter loop
+    # Add a label for the group
+    label = tk.Label(frame, text=group["name"], bg=group["bg_color"], font=("Arial", 12, "bold"))
+    label.pack(anchor="w", pady=2)
+
+    # Create buttons inside the group
+    for label, text in group["buttons"]:
+        tk.Button(frame, text=label, command=lambda t=text: insert_text(t)).pack(side=tk.LEFT, padx=5, pady=5)
+
+# Run the Tkinter event loop
 root.mainloop()

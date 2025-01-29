@@ -1,0 +1,214 @@
+i want to develop a python app interface that has a part for a text editor and a part of multiple buttons, cltr Z must be enables.
+you need to understand that by clicking on a button a dropdown menu of possible phrases appears, by clicking on a choice of the dropdown of possible
+displays , the chosen phrase appears on the text editor, the dropdown menu shows the beginning of the phrase only.
+The sub-groupes are in bold.
+Each cluster of buttons belong to a group that has a title, the group is a cluster of buttons with its own background color for a user-friendly interface. The group can have sub-groupes that contain the buttons.
+the groups are:
+
+group "EN-TETE" contains:
+  -sub-groupe "FC 2lames" contains buttons:
+    - exo endo has dropdown menu of "option1", "option2", etc..
+    - jonction endo has dropdown menu of "option1", "option2", etc..
+    - exojonc endo has dropdown menu of "option1", "option2", etc..
+    - exo jondo has dropdown menu of "option1", "option2", etc..
+    - OCE/OCI has dropdown menu of "option1", "option2", etc..
+
+  - sub-groupe "FC 3lames" contains buttons:
+    - exo jonction endo has dropdown menu of "option1", "option2", etc..:
+  
+  -sub-groupe "FCV" contains buttons:
+    - vagin exo endo has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe "Autres" contains buttons:
+    - Col seul has dropdown menu of "option1", "option2", etc..:
+    - vagin seul has dropdown menu of "option1", "option2", etc..:
+
+
+group "INFLAMMATION" contains:
+  - sub-groupe "0/10" contains buttons:
+    - nulle has dropdown menu of "option1", "option2", etc..:
+  
+  - sub-groupe "1-2/10" contains buttons:
+    - faible has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe "2-3/10" contains buttons:
+    - limitée has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe "3-4/10" contains buttons:
+    - modeste has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe "4-5/10" contains buttons:
+    - modere has dropdown menu of "option1", "option2", etc..:
+  
+  - sub-groupe "5-6/10" contains buttons:
+    - nulle has dropdown menu of "option1", "option2", etc..:
+  
+  - sub-groupe "6-7/10" contains buttons:
+    - nulle has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe ">7/10" contains buttons:
+    - nulle has dropdown menu of "option1", "option2", etc..:
+  
+  - sub-groupe "modérée" contains buttons:
+    - nulle has dropdown menu of "option1", "option2", etc..:
+
+
+group "Fond" contains buttons:
+  - tres propre has dropdown menu of "option1", "option2", etc.. :
+  - globalement propre has dropdown menu of "option1", "option2", etc.. :
+  - a peine granuleux has dropdown menu of "option1", "option2", etc.. :
+  - granuleux mais propre has dropdown menu of "option1", "option2", etc.. :
+  - modérément granuleux has dropdown menu of "option1", "option2", etc.. :
+  - tres granuleux has dropdown menu of "option1", "option2", etc.. :
+  - granuleux has dropdown menu of "option1", "option2", etc.. :
+  - sale has dropdown menu of "option1", "option2", etc.. :
+
+
+group "Mucus" contains buttons:
+  - mucus ++ has dropdown menu of "option1", "option2", etc.. :
+  - trainées mucus+ has dropdown menu of "option1", "option2", etc.. :
+
+group "mucus + sang" contains buttons:
+  - mucus++ Hgie+ has dropdown menu of "option1", "option2", etc.. :
+  - mucus trainée hgie has dropdown menu of "option1", "option2", etc.. :
+  - hémorragie has dropdown menu of "option1", "option2", etc.. :
+
+group "floral" contains buttons:
+  - lactobacillaire+ has dropdown menu of "option1", "option2", etc.. :
+  - lactobacillaire++ has dropdown menu of "option1", "option2", etc.. :
+
+group "germes / parasites" contains buttons:
+  - trichomonas has dropdown menu of "option1", "option2", etc.. :
+  - mycose has dropdown menu of "option1", "option2", etc.. :
+  - actinomycose has dropdown menu of "option1", "option2", etc.. :
+
+group "fond heterogene" contains buttons:
+  - muqueux++ granuleux has dropdown menu of "option1", "option2", etc.. :
+  - granuleux++ mucus+ has dropdown menu of "option1", "option2", etc.. :
+  - granuleux++ mucus hémorragique has dropdown menu of "option1", "option2", etc.. :
+
+group "Malpighien régulier" contains:
+  -sub-groupe "Hautes" contains buttons:
+    - superieures modéré has dropdown menu of "option1", "option2", etc..:
+    - supérieur moyen has dropdown menu of "option1", "option2", etc..:
+    - superieur abondant has dropdown menu of "option1", "option2", etc..:
+    - superieur tres abondant has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe "polymorphes majorite superieures" contains buttons:
+    - polymorphe modéré superieur+ has dropdown menu of "option1", "option2", etc..:
+    - polymorphe moyen superieur+ has dropdown menu of "option1", "option2", etc..:
+    - polymorphe abondant superieur+ has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe "polymorphes majorite profondes" contains buttons:
+    - polymorphe modéré profondes+ has dropdown menu of "option1", "option2", etc..:
+    - polymorphe moyen profondes+ has dropdown menu of "option1", "option2", etc..:
+    - polymorphe abondant profondes+ has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe "profondes" contains buttons:
+    - atrophique modere has dropdown menu of "option1", "option2", etc..:
+    - atrophique moyen has dropdown menu of "option1", "option2", etc..:
+    - atrophique abondant has dropdown menu of "option1", "option2", etc..:
+
+  -sub-groupe "Hautes + cytolyse" contains buttons:
+    - superieures modéré cytolyse+ has dropdown menu of "option1", "option2", etc..:
+    - supérieur moyen cytolyse+ has dropdown menu of "option1", "option2", etc..:
+    - superieur abondant cytolyse+ has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe "cylindriques" contains buttons:
+    - cylindriques rares has dropdown menu of "option1", "option2", etc..:
+    - cylindriques modere has dropdown menu of "option1", "option2", etc..:
+    - cylindriques abondant has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe "cylindriques + Métaplasie" contains buttons:
+    - cylindriques modere Métaplasie+ has dropdown menu of "option1", "option2", etc..:
+    - cylindriques modere Métaplasie++ has dropdown menu of "option1", "option2", etc..:
+    - cylindriques abondant Métaplasie+ has dropdown menu of "option1", "option2", etc..:
+    - cylindriques abondant Métaplasie++ has dropdown menu of "option1", "option2", etc..:
+
+
+  - sub-groupe "cytolyse" contains button:
+    - CYTOLYSE has dropdown menu of "option1", "option2", etc..:
+  
+  - sub-groupe "Malpighien particulier" contains buttons:
+    - clue-cells+ has dropdown menu of "option1", "option2", etc..:
+    - clue-cells ++ has dropdown menu of "option1", "option2", etc..:
+    - koilocytes has dropdown menu of "option1", "option2", etc..:
+    - koilocytes et dyskeratocytes has dropdown menu of "option1", "option2", etc..:
+    - dyskératocytes has dropdown menu of "option1", "option2", etc..:
+    - binuclées has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe " irritation" contains buttons:
+    - irritation + has dropdown menu of "option1", "option2", etc..:
+    - irritation ++ has dropdown menu of "option1", "option2", etc..:
+    - irritation +++ has dropdown menu of "option1", "option2", etc..:
+    - exocytose+ has dropdown menu of "option1", "option2", etc..:
+    - exocytose++ has dropdown menu of "option1", "option2", etc..:
+    - exocytose+++ has dropdown menu of "option1", "option2", etc..:
+
+  -sub-groupe "Dystrophique" contains buttons:
+    - Dystrophique seul+ has dropdown menu of "option1", "option2", etc..:
+    - Dystrophique seul++ has dropdown menu of "option1", "option2", etc..:
+    - Dystrophique type metaplasique has dropdown menu of "option1", "option2", etc..:
+    - Dystrophique type hyperplasie has dropdown menu of "option1", "option2", etc..:
+    - Dystrophique metaplasie + hyperplasie has dropdown menu of "option1", "option2", etc..:
+    - metaplasie seule has dropdown menu of "option1", "option2", etc..:
+    - metaplasie immature has dropdown menu of "option1", "option2", etc..:
+    - squames rares has dropdown menu of "option1", "option2", etc..:
+    - squames++ has dropdown menu of "option1", "option2", etc..:
+    - squames anuclées+parakeratosiques has dropdown menu of "option1", "option2", etc..:
+  
+
+group "Conclusion" contains:
+  -sub-groupe RAS contains button:
+    - OK has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe dystrophique contains buttons
+    - ectropion has dropdown menu of "option1", "option2", etc..:
+    - ectropion inflammatoire has dropdown menu of "option1", "option2", etc..:
+    - ectropion metaplasique has dropdown menu of "option1", "option2", etc..:
+    - ectropion inflammatoire metaplasique has dropdown menu of "option1", "option2", etc..:
+    - ectropion minime inflammatoire metaplasique has dropdown menu of "option1", "option2", etc..:
+    - ectropion minime has dropdown menu of "option1", "option2", etc..:
+    - ectropion minime inflammatoire has dropdown menu of "option1", "option2", etc..:
+    - ectropion minime metaplasique has dropdown menu of "option1", "option2", etc..:
+    - col atrophique has dropdown menu of "option1", "option2", etc..:
+    - col dystrophique has dropdown menu of "option1", "option2", etc..:
+    - col dystrophique atrophique has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe specifique contains buttons:
+    - col gardnerella has dropdown menu of "option1", "option2", etc..:
+    - col mycose has dropdown menu of "option1", "option2", etc..:
+    - col actinomycose has dropdown menu of "option1", "option2", etc..:
+    - col trichomonas has dropdown menu of "option1", "option2", etc..:
+
+  - sub-groupe inflammatoire contains buttons:
+    - col inflammatoire faible has dropdown menu of "option1", "option2", etc..:
+    - col inflammatoire modérée has dropdown menu of "option1", "option2", etc..:
+    - col inflammatoire has dropdown menu of "option1", "option2", etc..:
+    - col tres inflammatoire has dropdown menu of "option1", "option2", etc..:
+    - col tres inflammatoire controle has dropdown menu of "option1", "option2", etc..:
+  
+  - sub-groupe atypies contains buttons:
+    - ASC-US* has dropdown menu of "option1", "option2", etc..:
+    - ASC-H* has dropdown menu of "option1", "option2", etc..:
+    - AGC* has dropdown menu of "option1", "option2", etc..:
+    - note asc-us has dropdown menu of "option1", "option2", etc..:
+    - note asc-h has dropdown menu of "option1", "option2", etc..:
+    - note AGC has dropdown menu of "option1", "option2", etc..:
+    - HPV faible has dropdown menu of "option1", "option2", etc..:
+    - HPV has dropdown menu of "option1", "option2", etc..:
+    - HPV + CIN1 has dropdown menu of "option1", "option2", etc..:
+    - CIN1 has dropdown menu of "option1", "option2", etc..:
+    - CIN2 has dropdown menu of "option1", "option2", etc..:
+    - CIN3 has dropdown menu of "option1", "option2", etc..:
+    - suspect de magnilite has dropdown menu of "option1", "option2", etc..:
+  
+  - sub-groupe vagin contains buttons
+    - V. mycose has dropdown menu of "option1", "option2", etc..:
+    - V. gardnerella has dropdown menu of "option1", "option2", etc..:
+    - V. HPV has dropdown menu of "option1", "option2", etc..:
+    - V. RAS has dropdown menu of "option1", "option2", etc..:
+    - V. atrophique has dropdown menu of "option1", "option2", etc..:
+    - V. dystrophique has dropdown menu of "option1", "option2", etc..:
+    - V. infm has dropdown menu of "option1", "option2", etc..:
+   

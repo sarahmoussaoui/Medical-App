@@ -2,6 +2,11 @@ import tkinter as tk
 from tkinter import ttk
 import time
 from tkinter import messagebox
+from tkinter import filedialog
+from docx import Document  # Import python-docx to create and manipulate Word documents
+
+# Function to append content to an existing Word document
+def append_to_word():
     # Get the content from the text editor
     content = text_editor.get("1.0", tk.END)
     

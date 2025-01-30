@@ -157,7 +157,7 @@ button_groups = [
     # 3rd group
     {
         "name": "Fond",
-        "bg_color": "red",
+        "bg_color": "pink",
         "buttons": [
             ("tres propre", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
             ("gloabelement propre", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "]),
@@ -173,7 +173,7 @@ button_groups = [
     # 4th group
     {
         "name": "Mucus",
-        "bg_color": "red",
+        "bg_color": "yellow",
         "buttons": [
             ("mucus++", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
             ("trainées mucus+", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "])
@@ -183,7 +183,7 @@ button_groups = [
     # 5th group
     {
         "name": "Mucus + sang",
-        "bg_color": "red",
+        "bg_color": "ivory",
         "buttons": [
             ("mucus++ Hgie+", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
             ("mucus trainées hgie ", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "]),
@@ -195,7 +195,7 @@ button_groups = [
     # 6th group
     {
         "name": "floral",
-        "bg_color": "red",
+        "bg_color": "lightblue",
         "buttons": [
             ("lactobacillaire+", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
             ("lactobacillaire++", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "])
@@ -205,7 +205,7 @@ button_groups = [
     # 7th group
     {
         "name": "germes / parasites",
-        "bg_color": "red",
+        "bg_color": "pink",
         "buttons": [
             ("trichomonas", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
             ("mycose", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "]),
@@ -218,7 +218,7 @@ button_groups = [
     # 8th group
     {
         "name": "fond heterogene",
-        "bg_color": "red",
+        "bg_color": "beige",
         "buttons": [
             ("muqueux++ granuleux", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
             ("granuleux++ mucus+", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "]),
@@ -230,7 +230,7 @@ button_groups = [
     #9th group
     {
         "name": "Malpighien régulier",
-        "bg_color": "yellow",
+        "bg_color": "lightblue",
         "buttons": [
             {
             "sub_name": "Hautes",  # This is the new sub-name
@@ -363,7 +363,7 @@ button_groups = [
     #10TH group
     {
         "name": "Conclusion",
-        "bg_color": "yellow",
+        "bg_color": "beige",
         "buttons": [
             {
             "sub_name": "RAS",  # This is the new sub-name
@@ -458,9 +458,17 @@ root = tk.Tk()
 root.title("Medical Report Editor")
 root.geometry("700x500")
 
-# Create a text editor with undo functionality
-text_editor = tk.Text(root, height=10, width=80, undo=True)
+# Define a larger font
+editor_font = ("Arial", 14)  # You can change the font size as needed
+
+
+# Create a text editor with undo functionality and a larger font
+text_editor = tk.Text(root, height=10, width=80, undo=True, font=editor_font)
 text_editor.grid(row=0, column=0, columnspan=3, pady=10, padx=10, sticky="ew")
+
+
+# if you want dark background for text editor
+# text_editor = tk.Text(root, height=10, width=80, undo=True, font=("Arial", 14),bg="#2E2E2E", fg="#E0E0E0", insertbackground="white")
 
 # Enable "Ctrl + Z" for undo action
 root.bind("<Control-z>", lambda event: text_editor.edit_undo())

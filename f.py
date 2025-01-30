@@ -46,12 +46,12 @@ def on_close():
     else:
         root.destroy()
 
-# # Function to save the content automatically
-# def auto_save():
-#     content = text_editor.get("1.0", tk.END)  # Get the current content of the text editor
-#     with open("auto_backup.txt", "w") as file:
-#         file.write(content)
-#     print("Auto-saved")
+# Function to save the content automatically
+def auto_save():
+    content = text_editor.get("1.0", tk.END)  # Get the current content of the text editor
+    with open("auto_backup.txt", "w") as file:
+        file.write(content)
+    print("Auto-saved")
 
 # Function to insert predefined text into the text editor when a menu option is selected
 def insert_text(text):
@@ -93,11 +93,73 @@ button_groups = [
             "sub_name": "FC 2lames",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("exo endo", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("jonction endo", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("exojonc endo", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("exo jondo", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),  
-                ("OCE/OCI", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("exo endo", [
+                    "Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: ",
+                    "A l'examen, on constate:\n\n--sur le frottis exocervical: \n\n--sur le frottis endocervical: ",
+                    "A l'examen, on constate:\n\n--au niveau de l'exocol: \n\n--au niveau de l'endocol: ",
+                    "L'étude microscopique retrouve sur ces frottis:\n\n--sur l'exocol: \n\n--sur l'endocol: ",
+                    "L'examen montre:\n\n--au niveau de l'exocol: \n\n--au niveau de l'endocol: ",
+                    "On observe successivement:\n\n--sur l'exocol: \n\n--sur l'endocol: ",
+                    "Sur les frottis confiés, l'examen cytologique montre:\n\n--sur le frottis exocervical: \n\n--sur le frottis endocervical: ",
+                    "L'observation cytologique permet de constater:\n\n--sur l'exocol: \n\n--sur l'endocol: ",
+                    "On observe respectivement sur ces frottis:\n\n--sur l'exocol: \n\n--sur l'endocol: ",
+                    "Sur ces prélèvements, l'examen va montrer:\n\n--au niveau de l'exocol: \n\n--au niveau de l'endocol: ",
+                    "L'examen microscopique met en évidence:\n\n--au niveau de l'exocol: \n\n--au niveau de l'endocol: ",
+                    "Les frottis reçus montrent:\n\n--au niveau de l'exocol: \n\n--au niveau de l'endocol: "
+                ]),
+                ("jonction endo", [
+                    "Sur les frottis confiés, l'examen cytologique montre:\n\n--sur la jonction: \n\n--sur l'endocol: ",
+                    "Les préparations adressées se présentent ainsi:\n\n--sur le frottis jonctionnel: \n\n--sur le frottis endocervical: ",
+                    "L'examen effectué permet de retrouver:\n\n--au niveau de la jonction: \n\n--au niveau de l'endocol: ",
+                    "L'examen montre:\n\n--au niveau de la jonction: \n\n--au niveau de l'endocol: ",
+                    "A l'examen, on constate:\n\n--sur la jonction: \n\n--sur l'endocol: ",
+                    "Les frottis reçus montrent:\n\n--sur la jonction: \n\n--sur l'endocol: ",
+                    "L'observation cytologique permet de constater:\n\n--au niveau de la jonction: \n\n--au niveau de l'endocol: "
+                ]),
+                ("exojonc endo", [
+                    "On retrouve successivement:\n\n--sur l'exocol/jonction: \n\n--sur l'endocol: ",
+                    "Les frottis reçus montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: ",
+                    "Les frottis reçus montrent:\n\n--au niveau de l'exocol/jonction: \n\n--au niveau de l'endocol: ",
+                    "Sur ces frottis, on observe respectivement:\n\n--sur l'exocol/jonction: \n\n--sur l'endocol: ",
+                    "L'examen montre:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: ",
+                    "L'observation cytologique permet de constater:\n\n--sur l'exocol/jonction: \n\n--sur l'endocol: ",
+                    "Les prélèvements adressés montrent:\n\n--sur l'exocol/jonction: \n\n--sur l'endocol: ",
+                    "Sur ces prélèvements, l'examen va montrer:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: ",
+                    "L'étude microscopique retrouve sur ces frottis:\n\n--sur l'exocol/jonction: \n\n--sur l'endocol: ",
+                    "L'examen effectué permet de retrouver:\n\n--sur l'exocol/jonction: \n\n--sur l'endocol: ",
+                    "On observe successivement:\n\n--sur l'exocol/jonction: \n\n--sur l'endocol: ",
+                    "On observe respectivement sur ces frottis:\n\n--au niveau de l'exocol/jonction: \n\n--au niveau de l'endocol: ",
+                    "Sur ces frottis, on observe respectivement:\n\n--au niveau de l'exocol/jonction: \n\n--au niveau de l'endocol: ",
+                    "L'examen montre:\n\n--sur l'exocol/jonction: \n\n--sur l'endocol: "
+                ]),
+                ("exo jondo", [
+                    "L'observation cytologique permet de constater:\n\n--au niveau de l'exocol: \n\n--au niveau de la jonction/endocol: ",
+                    "A l'examen, on constate:\n\n--sur le frottis exocervical: \n\n--sur le frottis jonctionnel/endocervical: ",
+                    "Les préparations adressées se présentent ainsi:\n\n--l'exocol: \n\n--la jonction/endocol: ",
+                    "On observe respectivement sur ces frottis:\n\n--au niveau de l'exocol: \n\n--au niveau de la jonction/endocol: ",
+                    "Les prélèvements adressés montrent:\n\n--sur l'exocol: \n\n--sur la jonction/endocol: ",
+                    "L'examen effectué permet de retrouver:\n\n--sur l'exocol: \n\n--sur la jonction/endocol: ",
+                    "L'examen microscopique met en évidence:\n\n--sur le frottis exocervical: \n\n--sur le frottis jonctionnel/endocervical: ",
+                    "L'examen microscopique met en évidence:\n\n--sur l'exocol: \n\n--sur la jonction/endocol: ",
+                    "L'étude cytologique retrouve:\n\n--sur le frottis exocervical: \n\n--sur le frottis jonctionnel/endocervical: ",
+                    "Les préparations adressées se présentent ainsi:\n\n--sur le frottis exocervical: \n\n--sur le frottis jonctionnel/endocervical: ",
+                    "Sur les frottis confiés, l'examen cytologique montre:\n\n--au niveau de l'exocol: \n\n--au niveau de la jonction/endocol: ",
+                    "L'examen montre:\n\n--sur le frottis exocervical: \n\n--sur le frottis jonctionnel/endocervical: ",
+                    "On observe successivement:\n\n--sur l'exocol: \n\n--sur la jonction/endocol: ",
+                    "L'observation cytologique permet de constater:\n\n--sur le frottis exocervical: \n\n--sur le frottis jonctionnel/endocervical: "
+                ]),
+                ("OCE/OCI", [
+                    "Sur ces prélèvements, l'examen va montrer:\n\n--sur l'orifice cervical externe: \n\n--sur l'orifice cervical interne: ",
+                    "L'examen montre:\n\n--au niveau de l'OCE: \n\n--au niveau de l'OCI: ",
+                    "L'observation cytologique permet de constater:\n\n--sur l'OCE: \n\n--sur l'OCI: ",
+                    "Sur ces frottis, on observe respectivement:\n\n--sur l'OCE: \n\n--sur l'OCI: ",
+                    "L'étude microscopique retrouve sur ces frottis:\n\n--au niveau de l'OCE: \n\n--au niveau de l'OCI: ",
+                    "L'examen microscopique met en évidence:\n\n--sur l'orifice cervical externe: \n\n--sur l'orifice cervical interne: ",
+                    "A l'examen, on constate:\n\n--au niveau de l'OCE: \n\n--au niveau de l'OCI: ",
+                    "Les préparations adressées se présentent ainsi:\n\n--sur l'orifice cervical externe: \n\n--sur l'orifice cervical interne: ",
+                    "Les frottis reçus montrent:\n\n--au niveau de l'OCE: \n\n--au niveau de l'OCI: ",
+                    "Les prélèvements adressés montrent:\n\n--au niveau de l'OCE: \n\n--au niveau de l'OCI: "
+                ]),
             ]
             },
 
@@ -105,22 +167,64 @@ button_groups = [
             "sub_name": "FC 3lames",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("exo jonction endo", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])            ]
+                ("exo jonction endo", [
+                    "Les prélèvements adressés montrent:\n\n--sur le frottis exocervical: \n\n--sur le frottis jonctionnel: \n\n--sur le frottis endocervical: ",
+                    "Les préparations adressées se présentent ainsi:\n\n--sur le frottis exocervical: \n\n--sur le frottis jonctionnel: \n\n--sur le frottis endocervical: ",
+                    "L'étude cytologique retrouve:\n\n--sur l'exocol: \n\n--sur la jonction: \n\n--sur l'endocol: ",
+                    "On observe respectivement sur ces frottis:\n\n--sur l'exocol: \n\n--sur la jonction: \n\n--sur l'endocol: ",
+                    "L'étude microscopique retrouve sur ces frottis:\n\n--sur le frottis exocervical: \n\n--sur le frottis jonctionnel: \n\n--sur le frottis endocervical: ",
+                    "On observe successivement:\n\n--sur le frottis exocervical: \n\n--sur le frottis jonctionnel: \n\n--sur le frottis endocervical: ",
+                    "L'observation cytologique permet de constater:\n\n--sur l'exocol: \n\n--sur la jonction: \n\n--sur l'endocol: ",
+                    "Sur les frottis confiés, l'examen cytologique montre:\n\n--au niveau de l'exocol: \n\n--au niveau de la jonction: \n\n--au niveau de l'endocol: ",
+                    "Sur les frottis confiés, l'examen cytologique montre:\n\n--sur l'exocol: \n\n--sur la jonction: \n\n--sur l'endocol: "
+                ]),
+            ]
             },
 
             {
             "sub_name": "FCV",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("vagin exo jondo", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])            ]
+                ("vagin exo jondo", [
+                    "L'examen microscopique met en évidence:\n\n--au niveau du vagin: \n\n--au niveau de l'exocol: \n\n--au niveau de l'endocol: ",
+                    "L'examen montre:\n\n--sur le frottis vaginal: \n\n--sur le frottis exocervical: \n\n--sur le frottis endocervical: ",
+                    "L'étude cytologique retrouve:\n\n--sur le vagin: \n\n--sur l'exocol: \n\n--sur l'endocol: ",
+                    "On observe successivement:\n\n--sur le vagin: \n\n--sur l'exocol: \n\n--sur l'endocol: ",
+                    "L'examen effectué permet de retrouver:\n\n--sur le cul-de-sac: \n\n--sur le frottis exocervical: \n\n--sur le frottis endocervical: ",
+                    "Sur ces prélèvements, l'examen va montrer:\n\n--sur le vagin: \n\n--sur l'exocol: \n\n--sur l'endocol: ",
+                    "Les prélèvements adressés montrent:\n\n--sur le frottis vaginal: \n\n--sur le frottis exocervical: \n\n--sur le frottis endocervical: ",
+                    "On observe successivement:\n\n--sur le cul-de-sac: \n\n--sur le frottis exocervical: \n\n--sur le frottis endocervical: ",
+                    "L'examen effectué permet de retrouver:\n\n--au niveau du vagin: \n\n--au niveau de l'exocol: \n\n--au niveau de l'endocol: ",
+                    "L'étude microscopique retrouve sur ces frottis:\n\n--sur le cul-de-sac: \n\n--sur le frottis exocervical: \n\n--sur le frottis endocervical: ",
+                    "L'étude cytologique retrouve:\n\n--sur le frottis vaginal: \n\n--sur le frottis exocervical: \n\n--sur le frottis endocervical: ",
+                    "L'examen montre:\n\n--au niveau du vagin: \n\n--au niveau de l'exocol: \n\n--au niveau de l'endocol: ",
+                    "L'examen microscopique met en évidence:\n\n--sur le frottis vaginal: \n\n--sur le frottis exocervical: \n\n--sur le frottis endocervical: "
+                ]),
+            ]
             },
 
             {
             "sub_name": "Autres",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("col seul", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("vagin seul", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("col seul", [
+                    "L'étude microscopique a concerné le col.",
+                    "Le prélèvement cervical est reçu pour examen microscopique.",
+                    "L'examen microscopique est effectué sur ce prélèvement cervico-utérin.",
+                    "Le prélèvement confié représente le col utérin.",
+                    "L'analyse microscopique a intéressé le col utérin.",
+                    "L'examen cytologique a porté sur un prélèvement cervical.",
+                    "Un prélèvement cervical est adressé pour examen."
+                ]),
+                ("vagin seul", [
+                    "L'étude microscopique a concerné le vagin.",
+                    "Un prélèvement vaginal est adressé pour examen.",
+                    "L'examen microscopique a porté sur un prélèvement vaginal.",
+                    "L'observation microscopique a porté sur un prélèvement vaginal.",
+                    "L'analyse microscopique a intéressé le vagin.",
+                    "L'étude microscopique a intéressé un prélèvement vaginal.",
+                    "Un prélèvement vaginal est adressé pour étude microscopique."
+                ])
             ]
             }
         ]
@@ -134,7 +238,17 @@ button_groups = [
             "sub_name": "0/10",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("nulle", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("nulle", [
+                    "L'afflux de cellules inflammatoires est presque nul.",
+                    "On ne retrouve pas d'infiltrat inflammatoire.",
+                    "La participation inflammatoire est pratiquement nulle.",
+                    "Le contingent inflammatoire est quasiment absent.",
+                    "On ne rencontre pas de contingent inflammatoire.",
+                    "On n'observe pas de participation inflammatoire.",
+                    "On ne constate pas de présence inflammatoire.",
+                    "Il n'y a pas d'infiltrat inflammatoire.",
+                    "Il n'y a pas de participation inflammatoire."
+                ])
             ]
             },
 
@@ -142,7 +256,22 @@ button_groups = [
             "sub_name": "1-2/10",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("faible", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("faible", [
+                    "L'infiltrat leucocytaire est négligeable.",
+                    "L'afflux d'éléments inflammatoires est négligeable.",
+                    "On ne rencontre que quelques éléments inflammatoires.",
+                    "On ne rencontre que peu de polynucléaires.",
+                    "Faible afflux inflammatoire.",
+                    "La présence d'éléments inflammatoires est insignifiante.",
+                    "Pauvre présence inflammatoire.",
+                    "On ne constate qu'une bien faible participation inflammatoire.",
+                    "Les éléments inflammatoires sont rares.",
+                    "L'inflammation est très discrète.",
+                    "On n'observe qu'une faible présence inflammatoire.",
+                    "La présence de cellules inflammatoires n'est pas significative.",
+                    "Rares éléments inflammatoires.",
+                    "La participation inflammatoire est très faible."
+                ])
             ]
             },
 
@@ -150,7 +279,15 @@ button_groups = [
             "sub_name": "2-3/10",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("limitée", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("limitée", [
+                    "On ne constate qu'une discrète participation inflammatoire.",
+                    "L'inflammation est minime.",
+                    "Quant à la participation inflammatoire, elle est bien modeste.",
+                    "L'infiltrat leucocytaire est sans importance.",
+                    "L'afflux d'éléments inflammatoires est discret.",
+                    "On ne rencontre que peu d'éléments inflammatoires.",
+                    "La présence de cellules inflammatoires est peu significative."
+                ])
             ]
             },
 
@@ -158,7 +295,16 @@ button_groups = [
             "sub_name": "3-4/10",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("modeste", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("modeste", [
+                    "Quant à la participation inflammatoire, elle se montre modeste, leucocytaire.",
+                    "L'infiltrat inflammatoire se limite à quelques traînées leucocytaires.",
+                    "Le contingent leucocytaire associé est modeste.",
+                    "Il s'agit d'un infiltrat inflammatoire modeste.",
+                    "La présence d'éléments inflammatoires est modeste.",
+                    "La participation d'éléments inflammatoires n'est pas importante.",
+                    "Présence d'un infiltrat modeste de polynucléaires.",
+                    "La présence de cellules inflammatoires se révèle modeste."
+                ])
             ]
             },
 
@@ -167,7 +313,19 @@ button_groups = [
             "sub_name": "4-5/10",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("modere", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("modérée", [
+                    "La participation d'éléments inflammatoires n'est pas importante.",
+                    "L'infiltrat inflammatoire est modéré, essentiellement fait de polynucléaires.",
+                    "Il s'agit d'un infiltrat inflammatoire surtout leucocytaire d'abondance modérée.",
+                    "Le contingent leucocytaire est peu abondant.",
+                    "Des bandes leucocytaires de densité modérée sont présentes.",
+                    "L'infiltrat inflammatoire est modéré, leucocytaire.",
+                    "L'infiltrat inflammatoire se limite à quelques traînées leucocytaires.",
+                    "Le contingent inflammatoire accompagnement n'est pas important.",
+                    "L'infiltrat inflammatoire est d'abondance modérée.",
+                    "La préparation est parcourue par de grêles traînées de polynucléaires.",
+                    "Quant à la présence inflammatoire, elle se montre peu importante."
+                ])
             ]
             },
 
@@ -175,7 +333,20 @@ button_groups = [
             "sub_name": "5-6/10",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("moyen abondance", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("moyen abondance", [
+                    "L'infiltrat inflammatoire est plutôt riche.",
+                    "L'infiltrat inflammatoire est de moyenne abondance, essentiellement fait de polynucléaires.",
+                    "L'infiltrat inflammatoire se montre de moyenne abondance, constitué surtout de polynucléaires.",
+                    "La présence d'éléments inflammatoires est assez abondante.",
+                    "Le contingent leucocytaire associé est d'abondance moyenne.",
+                    "L'infiltrat inflammatoire forme quelques traînées leucocytaires.",
+                    "Le contingent leucocytaire d'accompagnement est de moyenne abondance.",
+                    "L'infiltrat inflammatoire est relativement abondant.",
+                    "La participation d'éléments inflammatoires n'est relativement riche.",
+                    "Présence d'un infiltrat moyennement abondant de polynucléaires.",
+                    "Le contingent leucocytaire est assez abondant.",
+                    "L'infiltrat inflammatoire est assez abondant."
+                ])
             ]
             },
 
@@ -183,7 +354,17 @@ button_groups = [
             "sub_name": "6-7/10",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("importante", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("importante", [
+                    "Présence d'un infiltrat inflammatoire diffus, étendu à toute la préparation.",
+                    "Présence de plages inflammatoires épaisses et denses.",
+                    "La plupart des placards épithéliaux sont étroitement accompagnés par l'infiltrat inflammatoire.",
+                    "L'infiltrat inflammatoire est retrouvé en nappes renfermant des groupements épithéliaux.",
+                    "La population épithéliale est souvent escortée, parfois dissociée par l'infiltrat inflammatoire.",
+                    "L'infiltrat inflammatoire est présent en traînées assez larges épaisses renfermant des amas épithéliaux.",
+                    "L'infiltrat inflammatoire est important, dominé par des polynucléaires.",
+                    "Présence d'un important infiltrat inflammatoire.",
+                    "L'infiltrat inflammatoire est abondant."
+                ])
             ]
             },
 
@@ -191,15 +372,37 @@ button_groups = [
             "sub_name": ">7/10",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("tres importante", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("très importante", [
+                    "La participation inflammatoire est massive.",
+                    "L'infiltrat inflammatoire pénètre la desquamation épithéliale.",
+                    "L'infiltrat inflammatoire va former des nappes denses, à prédominance leucocytaire.",
+                    "Le contingent inflammatoire est massif, recouvrant un grand nombre de placards épithéliaux.",
+                    "L'infiltrat inflammatoire prédomine très largement.",
+                    "Présence d'un infiltrat inflammatoire diffus, étendu à toute la préparation.",
+                    "L'infiltrat inflammatoire est très important, dominé par des polynucléaires.",
+                    "L'infiltrat inflammatoire est particulièrement important, principalement leucocytaire.",
+                    "L'infiltrat inflammatoire se montre très riche, constitué en majorité de leucocytes.",
+                    "Présence de plages inflammatoires épaisses et denses."
+                ])
             ]
             },
 
             {
-            "sub_name": "modérée/10",  # This is the new sub-name
+            "sub_name": "modérée polymorphe",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("modérée", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("modérée polymorphe", [
+                    "L'infiltrat inflammatoire est polymorphe, modéré.",
+                    "L'infiltrat inflammatoire est modéré.",
+                    "Présence d'un infiltrat modéré et polymorphe.",
+                    "L'infiltrat inflammatoire est modéré, leuco-histiocytaire.",
+                    "Des bandes leuco-histiocytaires de densité modérée sont présentes.",
+                    "Quant à la présence inflammatoire, elle se montre peu importante.",
+                    "L'infiltrat inflammatoire se montre d'abondance modérée.",
+                    "Le contingent inflammatoire accompagnement n'est pas important, polymorphe.",
+                    "L'infiltrat inflammatoire se limite à quelques traînées leuco-histiocytaires.",
+                    "Quant à la participation inflammatoire, elle se montre polymorphe, modérée."
+                ])
             ]
             }
             
@@ -211,14 +414,90 @@ button_groups = [
         "name": "Fond",
         "bg_color": "pink",
         "buttons": [
-            ("tres propre", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
-            ("gloabelement propre", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "]),
-            ("a peine granuleux", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-            ("granuleux", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-            ("moderement granuleux", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-            ("tres granuleux", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-            ("granuleux", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-            ("sale", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
+            ("très propre", [
+                "La préparation montre un fond bien propre.",
+                "La préparation montre un fond d'aspect très propre.",
+                "Cette préparation est de caractère particulièrement propre.",
+                "La préparation montre un fond particulièrement propre.",
+                "Le frottis paraît très propre.",
+                "On constate qu'il s'agit d'un fond bien propre.",
+                "La préparation montre un fond très propre.",
+                "Le fond de la préparation est bien propre.",
+                "Il s'agit d'une préparation bien propre.",
+                "Le fond de la préparation est très propre.",
+                "Le fond du frottis est nettement dégagé, clair."
+            ]),
+            ("globalement propre", [
+                "On est en présence d'une préparation à fond propre.",
+                "Dans l'ensemble, il s'agit d'une préparation propre.",
+                "Dans l'ensemble, cette préparation est d'aspect propre.",
+                "Le fond se montre généralement propre.",
+                "Il s'agit d'une préparation propre.",
+                "Cette préparation est de caractère propre.",
+                "Le fond se montre propre.",
+                "Ce frottis paraît globalement net.",
+                "On constate qu'il s'agit d'un fond qui est dans l'ensemble propre.",
+                "Le fond est globalement propre.",
+                "Le fond du frottis est plutôt dégagé, clair.",
+                "Cette préparation est de caractère propre dans l'ensemble.",
+                "Le fond se montre propre.",
+                "Ce frottis paraît net pour l'essentiel.",
+                "Ce frottis paraît net dans l'ensemble."
+            ]),
+            ("à peine granuleux", [
+                "La préparation paraît d'aspect discrètement granuleux.",
+                "Le fond est à peine granuleux.",
+                "La préparation se révèle légèrement granuleuse.",
+                "Le frottis va montrer un arrière-fond de caractère à peine granuleux.",
+                "Ce frottis est d'aspect discrètement granuleux.",
+                "Le fond du frottis se montre à peine granuleux.",
+                "Ce frottis présente un fond discrètement granuleux.",
+                "Il s'agit d'une préparation légèrement granuleuse."
+            ]),
+            ("granuleux mais propre", [
+                "Ce frottis bien que granuleux conserve un aspect généralement propre.",
+                "Ce frottis légèrement granuleux reste pour l'essentiel propre.",
+                "Ce frottis se montre un peu granuleux et reste plutôt propre.",
+                "Granuleux par endroits, le fond de cette préparation reste généralement propre.",
+                "Le fond de ce frottis est légèrement granuleux et reste dans l'ensemble propre.",
+                "Cette préparation à fond un peu granuleux reste pour l'essentiel plutôt propre.",
+                "Ce frottis bien que granuleux présente un aspect généralement propre.",
+                "Le frottis va montrer un arrière-fond granuleux, mais globalement propre."
+            ]),
+            ("modérément granuleux", [
+                "Le frottis va montrer un arrière-fond de caractère peu granuleux.",
+                "Il s'agit d'une préparation modérément granuleuse.",
+                "Ce frottis est d'aspect modérément granuleux.",
+                "On est en présence d'un fond d'aspect peu granuleux.",
+                "Le fond est modérément granuleux.",
+                "La préparation se révèle modérément granuleuse.",
+                "Le fond du frottis se montre peu granuleux.",
+                "Ce frottis présente un fond modérément granuleux."
+            ]),
+            ("très granuleux", [
+                "Ce frottis est d'aspect très granuleux.",
+                "Le fond du frottis se montre très granuleux.",
+                "Il s'agit d'une préparation très granuleuse.",
+                "On est en présence d'un fond d'aspect très granuleux.",
+                "Le frottis va montrer un arrière-fond de caractère très granuleux.",
+                "Le fond est très granuleux.",
+                "La préparation se révèle très granuleuse."
+            ]),
+            ("granuleux", [
+                "Il s'agit d'une préparation granuleuse.",
+                "Le fond du frottis se montre granuleux.",
+                "Le fond est granuleux.",
+                "La préparation paraît d'aspect granuleux.",
+                "La préparation se révèle bien granuleuse.",
+                "Le frottis va montrer un arrière-fond de caractère granuleux.",
+                "Ce frottis est d'aspect granuleux.",
+                "On est en présence d'un fond d'aspect granuleux."
+            ]),
+            ("sale", [
+                "La préparation est sale.",
+                "On retrouve un fond d'aspect bien trouble.",
+                "Ce prélèvement est d'aspect sale."
+            ])
         ]
     },
 
@@ -227,8 +506,31 @@ button_groups = [
         "name": "Mucus",
         "bg_color": "yellow",
         "buttons": [
-            ("mucus++", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
-            ("trainées mucus+", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "])
+            ("mucus+++", [
+                "Le mucus est abondant.",
+                "Le mucus est rapporté en abondance.",
+                "La glaire est épaisse.",
+                "De la glaire est présente en abondance.",
+                "Présence de mucus en plages étendues.",
+                "Le mucus rapporté est riche.",
+                "Une glaire abondante occupe le fond.",
+                "Le fond est muqueux.",
+                "La glaire est retrouvée en abondance.",
+                "Le mucus forme des nappes.",
+                "Un mucus très abondant s'observe."
+            ]),
+            ("trainées mucus+", [
+                "Un mucus en traînées s'observe.",
+                "Le mucus est rapporté en traînées.",
+                "Des traînées de mucus s'observent.",
+                "Le mucus forme des bandes.",
+                "La glaire est en traînées.",
+                "Le fond est parcouru de traînées de mucus.",
+                "Présence de traînées de glaire.",
+                "On retrouve de la glaire en traînées.",
+                "Des traînées de glaire parcourent la préparation.",
+                "Présence de traînées de mucus."
+            ])
         ]
     },
 
@@ -237,9 +539,37 @@ button_groups = [
         "name": "Mucus + sang",
         "bg_color": "ivory",
         "buttons": [
-            ("mucus++ Hgie+", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
-            ("mucus trainées hgie ", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "]),
-            ("hemorragie ", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "])
+            ("mucus++ Hgie+", [
+                "On retrouve de la glaire hématique en abondance.",
+                "Une glaire abondante occupe le fond, accompagnée d'un peu de sang.",
+                "De la glaire est présente sous la forme de traînées légèrement hématiques.",
+                "Présence de mucus en plages étendues, teintées de sang.",
+                "Le mucus est rapporté en abondance, à peine hématique.",
+                "La glaire est retrouvée en abondance, striée de sang.",
+                "Un mucus très abondant s'observe, strié de sang.",
+                "Le fond est muqueux, légèrement hématique.",
+                "Le mucus forme des nappes un peu hématiques.",
+                "La glaire est épaisse, tatouée de sang."
+            ]),
+            ("mucus trainée hgie", [
+                "Présence de traînées de glaire à peine hématique.",
+                "Le fond est parcouru de traînées de mucus tatouées de sang.",
+                "Une glaire en traînées striées de sang parcourt la préparation.",
+                "Le mucus va former des traînées un peu hémorragiques.",
+                "Le mucus est tatoué de sang, en traînées.",
+                "De la glaire est présente en bandes tatouées de sang.",
+                "On retrouve de la glaire en traînées, légèrement hématiques.",
+                "Un mucus en traînées s'observe, accompagnées de filets de sang.",
+                "Présence de traînées de mucus peu hématique.",
+                "Le mucus rapporté se dispose en traînées striées de sang."
+            ]),
+            ("hémorragie", [
+                "La préparation est striée de sang.",
+                "Il s'agit d'un prélèvement hématique.",
+                "Du sang est retrouvé.",
+                "Le sang est abondant.",
+                "La préparation est hémorragique."
+            ])
 
         ]
     },
@@ -249,8 +579,28 @@ button_groups = [
         "name": "floral",
         "bg_color": "lightblue",
         "buttons": [
-            ("lactobacillaire+", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
-            ("lactobacillaire++", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "])
+            ("lactobacillaire+", [
+                "Le fond est modérément granuleux par la présence de flore lactobacillaire.",
+                "Le fond est en partie recouvert de lactobacilles.",
+                "Le fond est occupé par une flore modérée de lactobacilles.",
+                "Le fond est modérément lactobacillaire.",
+                "Des lactobacilles sont retrouvés par endroits.",
+                "Présence modérée de lactobacilles.",
+                "Le frottis comporte des lactobacilles.",
+                "Présence d'une flore physiologique modérée."
+            ]),
+            ("lactobacillaire++", [
+                "Abondante présence de lactobacilles.",
+                "Le fond est densément lactobacillaire.",
+                "Le fond est occupé par une abondante flore de lactobacilles.",
+                "Le fond du frottis est densément lactobacillaire.",
+                "Le fond est recouvert de lactobacilles.",
+                "Le fond est granuleux par la présence de la flore lactobacillaire.",
+                "Un tapis de lactobacilles est retrouvé.",
+                "La préparation est tapissée de lactobacilles.",
+                "Présence d'une flore physiologique dense.",
+                "Le frottis est riche en lactobacilles."
+            ])
         ]
     },
 
@@ -259,9 +609,40 @@ button_groups = [
         "name": "germes / parasites",
         "bg_color": "pink",
         "buttons": [
-            ("trichomonas", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
-            ("mycose", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "]),
-            ("actinomycose ", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "])
+            ("trichomonas", [
+                "On retrouve des trichomonas au sein de l'infiltrat inflammatoire.",
+                "Du trichomonas est observé.",
+                "Quelques trichomonas sont présents parmi les éléments inflammatoires.",
+                "La présence de trichomonas est constatée.",
+                "On parvient à identifier des trichomonas altérés.",
+                "Des trichomonas s'observent.",
+                "S'y ajoutent des trichomonas.",
+                "On reconnaît des trichomonas au sein de l'infiltrat inflammatoire.",
+                "La présence de trichomonas est notée."
+            ]),
+            ("mycose", [
+                "Une mycose y est associée.",
+                "On note la présence d'une mycose.",
+                "Des formations mycéliennes sont rencontrées.",
+                "Des structures mycéliennes sont présentes.",
+                "S'y associent des filaments mycéliens.",
+                "Des spores et des filaments mycéliens sont retrouvés.",
+                "La présence d'une mycose est constatée.",
+                "Des filaments et des spores sont présents.",
+                "On note aussi la présence de formations mycéliennes.",
+                "Présence de formations mycéliennes."
+            ]),
+            ("actinomycose", [
+                "Des filaments d'actinomyces sont présents.",
+                "De l'actinomycose est observée.",
+                "Des formations filamenteuses d'actinomyces sont présentes.",
+                "Des filaments d'actinomyces sont retrouvés.",
+                "De l'actinomycose est observable.",
+                "Présence d'amas filamenteux bleutés d'actinomycose.",
+                "On retrouve de l'actinomycose.",
+                "On retrouve des amas filamenteux d'actinomycose.",
+                "On retrouve des magmas filamenteux d'actinomycose."
+            ])
 
         ]
     },
@@ -272,9 +653,31 @@ button_groups = [
         "name": "fond heterogene",
         "bg_color": "beige",
         "buttons": [
-            ("muqueux++ granuleux", ["Sur ces prélèvements, l'examen va montrer:\n\n--sur l'exocol: \n\n--sur l'endocol:  "]),
-            ("granuleux++ mucus+", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "]),
-            ("granuleux++ mucus ", ["L’étude microscopique retrouve sur ces frottis:\n\n--au niveau de la jonction: \n\n--au niveau de l’endocol:  "])
+            ("muqueux++granuleux", [
+                "La préparation paraît d'aspect muqueux, modérément granuleux.",
+                "Ce frottis présente un fond muqueux, granuleux par endroits.",
+                "Ce frottis est d'aspect muqueux, granuleux parfois.",
+                "On est en présence d'un fond d'aspect muqueux, granuleux par endroits.",
+                "La préparation se révèle bien riche en mucus, légèrement granuleuse.",
+                "Le frottis va montrer un arrière-fond de caractère muqueux, comportant des foyers granuleux.",
+                "Le fond du frottis se montre muqueux, avec foyers granuleux."
+            ]),
+            ("granuleux++mucus+", [
+                "Il s'agit d'une préparation granuleuse, avec quelques foyers de glaire.",
+                "On observe de la glaire modérée sur un fond qui est granuleux.",
+                "Le frottis va montrer un arrière-fond de caractère granuleux, comportant un peu de glaire.",
+                "La préparation se révèle bien granuleuse, légèrement mucoïde.",
+                "Ce frottis est d'aspect granuleux, muqueux parfois.",
+                "On est en présence d'un fond d'aspect granuleux, muqueux par endroits."
+            ]),
+            ("granuleux++mucus hémorragique", [
+                "Ce frottis est d'aspect granuleux, muqueux et hématique parfois.",
+                "Le frottis va montrer un arrière-fond de caractère granuleux, comportant un peu de glaire strié de sang.",
+                "Le fond du frottis se montre granuleux, avec présence modérée de mucus teinté de sang.",
+                "On observe de la glaire modérée, légèrement hématique, sur un fond qui est granuleux.",
+                "Ce frottis présente un fond granuleux, muqueux et hématique par endroits.",
+                "La préparation paraît d'aspect granuleux, modérément muco-hématique."
+            ])
 
         ]
     },

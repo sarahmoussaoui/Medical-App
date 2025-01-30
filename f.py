@@ -516,10 +516,13 @@ for group in button_groups:
         if isinstance(item, tuple):  # Regular button (label, options)
             label, options = item
             create_button(frame, label, options, group["bg_color"], button_row, button_column)
+
+            # Adjust column and row for the next button
             button_column += 1
-            if button_column > 1:  # Adjust the number of columns as needed
+            if button_column > 1:  # Max 2 columns
                 button_column = 0
                 button_row += 1
+
         elif isinstance(item, dict):  # Subcategory (sub_name, buttons)
             sub_frame = tk.Frame(frame, bg=item["bg_color"], padx=10, pady=5)
             sub_frame.grid(row=button_row, column=0, columnspan=2, padx=5, pady=5, sticky="w")
@@ -532,12 +535,15 @@ for group in button_groups:
 
             for sub_button in item["buttons"]:
                 create_button(sub_frame, sub_button[0], sub_button[1], item["bg_color"], sub_button_row, sub_button_column)
+
+                # Adjust column and row for next button
                 sub_button_column += 1
-                if sub_button_column > 1:  # Adjust the number of columns as needed
+                if sub_button_column > 1:  # Max 2 columns
                     sub_button_column = 0
                     sub_button_row += 1
 
-            button_row = sub_button_row + 1
+            # Ensure the next subgroup does not overwrite the previous one
+            button_row += sub_button_row + 1  
 
     # Update row and column for the next group
     current_column += 1

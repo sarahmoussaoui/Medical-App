@@ -1,5 +1,57 @@
 import tkinter as tk
 from tkinter import ttk
+import time
+from tkinter import messagebox
+from tkinter import filedialog
+from docx import Document  # Import python-docx to create and manipulate Word documents
+
+# Function to append content to an existing Word document
+def append_to_word():
+    # Get the content from the text editor
+    content = text_editor.get("1.0", tk.END)
+    
+    if content.strip():  # Only append if there is any content
+        # Ask the user to select an existing Word document to append the content
+        file_path = filedialog.askopenfilename(defaultextension=".docx", filetypes=[("Word documents", "*.docx")])
+        
+        if file_path:
+            try:
+                # Load the existing document
+                doc = Document(file_path)
+                
+                # Append the content to the document
+                doc.add_paragraph(content)
+                
+                # Save the document (overwrite the existing document)
+                doc.save(file_path)
+                print(f"Content appended to {file_path}")
+            except Exception as e:
+                print(f"Error: {e}")
+        else:
+            print("No file selected.")
+    else:
+        print("No content to append.")
+
+# Function to prompt before closing
+def on_close():
+    if text_editor.get("1.0", tk.END).strip() != "":  # Check if there is content
+        response = messagebox.askyesnocancel("Unsaved Changes", "You have unsaved changes. Do you want to save before closing?")
+        if response:  # Save and close
+            save_file()
+            root.destroy()
+        elif response is None:  # Cancel the closing
+            pass
+        else:  # Close without saving
+            root.destroy()
+    else:
+        root.destroy()
+
+# # Function to save the content automatically
+# def auto_save():
+#     content = text_editor.get("1.0", tk.END)  # Get the current content of the text editor
+#     with open("auto_backup.txt", "w") as file:
+#         file.write(content)
+#     print("Auto-saved")
 
 # Function to insert predefined text into the text editor when a menu option is selected
 def insert_text(text):
@@ -473,8 +525,15 @@ text_editor.pack(expand=True, fill=tk.BOTH)
 # if you want dark background for text editor
 # text_editor = tk.Text(root, height=10, width=80, undo=True, font=("Arial", 14),bg="#2E2E2E", fg="#E0E0E0", insertbackground="white")
 
-# Enable "Ctrl + Z" for undo action
-root.bind("<Control-z>", lambda event: text_editor.edit_undo())
+
+# Enable "Ctrl + Z" for undo action and "Ctrl + Y" for redo action
+root.bind("<Control-z>", lambda event: text_editor.edit_undo())  # Undo action
+root.bind("<Control-y>", lambda event: text_editor.edit_redo())  # Redo action
+
+# Add a Save button with "Ctrl + S" for appending to Word
+root.bind("<Control-s>", lambda event: append_to_word())  # Ctrl + S to append to Word
+# Bind the close button to prompt the user before closing
+root.protocol("WM_DELETE_WINDOW", on_close)
 
 # Create a canvas and scrollbar for the groups
 canvas = tk.Canvas(root)

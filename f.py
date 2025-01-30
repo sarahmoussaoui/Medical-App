@@ -461,10 +461,13 @@ root.geometry("700x500")
 # Define a larger font
 editor_font = ("Arial", 14)  # You can change the font size as needed
 
+# Create a frame for the text editor so it stays fixed above the scrolling area
+text_frame = tk.Frame(root)
+text_frame.grid(row=0, column=0, columnspan=3, pady=10, padx=10, sticky="ew")
 
 # Create a text editor with undo functionality and a larger font
-text_editor = tk.Text(root, height=10, width=80, undo=True, font=editor_font)
-text_editor.grid(row=0, column=0, columnspan=3, pady=10, padx=10, sticky="ew")
+text_editor = tk.Text(text_frame, height=10, width=80, undo=True, font=editor_font)
+text_editor.pack(expand=True, fill=tk.BOTH)
 
 
 # if you want dark background for text editor
@@ -475,8 +478,9 @@ root.bind("<Control-z>", lambda event: text_editor.edit_undo())
 
 # Create a canvas and scrollbar for the groups
 canvas = tk.Canvas(root)
-scrollbar = ttk.Scrollbar(root, orient="vertical", command=canvas.yview)
+scrollbar = ttk.Scrollbar(root, orient="vertical", command=canvas.yview)  # Increase width
 scrollable_frame = ttk.Frame(canvas)
+
 
 # Configure the canvas and scrollbar
 scrollable_frame.bind(
@@ -489,6 +493,8 @@ canvas.configure(yscrollcommand=scrollbar.set)
 # Pack the canvas and scrollbar
 canvas.grid(row=1, column=0, columnspan=2, sticky="nsew")
 scrollbar.grid(row=1, column=2, sticky="ns")
+
+
 
 # Configure grid weights to make the layout responsive
 root.grid_rowconfigure(1, weight=1)
@@ -550,6 +556,14 @@ for group in button_groups:
     if current_column >= max_columns:
         current_column = 0
         current_row += 1
+
+# Bind two-finger scrolling (for touchpad or mouse wheel)
+def on_scroll(event):
+    if event.delta != 0:  # Check for scroll direction
+        canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+
+root.bind_all("<MouseWheel>", on_scroll)  # Bind mouse wheel (works for touchpad too)
+
 
 # Run the Tkinter event loop
 root.mainloop()

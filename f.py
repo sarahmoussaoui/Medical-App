@@ -1496,10 +1496,42 @@ button_groups = [
             "sub_name": "specifique",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("col gardnerella", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("col mycose", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("col actinomycose", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("col trichomonas", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("col gardnerella", [
+                    "Conclusion : Aspect de vaginose bactérienne. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect cytologique de vaginose bactérienne. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Vaginose bactérienne, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Aspect compatible avec une vaginose bactérienne, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence d'une vaginose bactérienne, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Frottis siège de gardnerella, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Frottis siège d'une vaginose bactérienne, sans lésion intra-épithéliale, ni malignité.",
+                    "Conclusion : Il s'agit d'une vaginose bactérienne, sans lésion intraépithéliale, ni malignité."
+                ]),
+                ("col mycose", [
+                    "Conclusion : Aspect de mycose, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Aspect cytologique de mycose. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Il s'agit d'une mycose, sans lésion intraépithéliale, ni malignité.",
+                    "Conclusion : Frottis siège d'une mycose. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Ces aspects correspondent à une mycose, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Prélèvement montrant la présence de mycose. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence de mycose, sans lésion intra-épithéliale ou de malignité."
+                ]),
+                ("col actinomycose", [
+                    "Conclusion : Présence d'une actinomycose, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Prélèvement montrant la présence d'actinomycose. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect d'actinomycose, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Aspect cytologique d'actinomycose. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Il s'agit d'une actinomycose, sans lésion intraépithéliale, ni malignité.",
+                    "Conclusion : Frottis siège d'une actinomycose. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence d'actinomycose, sans lésion intra-épithéliale ou de malignité."
+                ]),
+                ("col trichomonas", [
+                    "Conclusion : Prélèvement montrant la présence de trichomonas. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect cytologique de trichomonase. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Frottis siège de trichomonas. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect de trichomonas, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Ces aspects correspondent à du trichomonas, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence de trichomonas, sans lésion intra-épithéliale, ni malignité."
+                ])
            ]
             },
 
@@ -1508,10 +1540,51 @@ button_groups = [
             "sub_name": "inflammatoire",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("col inflammatoire faible", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("col inflammatoire modere", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("col inflammatoire", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("col tres inflammatoire controle", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("col inflammatoire", [
+                    "Conclusion : Remaniements de caractère inflammatoire, sans spécificité. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect inflammatoire. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Frottis inflammatoire non spécifique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Modifications de caractère inflammatoire, sans spécificité. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Modifications inflammatoires non spécifiques. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Modifications inflammatoires sans caractère spécifique. Absence de lésion intra-épithéliale ou de malignité."
+                ]),
+
+                ("col inflammatoire faible", [
+                    "Conclusion : Présence de quelques signes d'inflammation banale, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Discrète inflammation banale sans lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence d'une inflammation discrète sans caractère spécifique, sans lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Ces aspects correspondent à un col de caractère peu inflammatoire, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect de col discrètement inflammatoire. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col présentant quelques signes inflammatoires, sans lésion intra-épithéliale, ni malignité."
+                ]),
+                ("col inflammatoire modéré", [
+                    "Conclusion : Présence d'une inflammation banale, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence de signes d'une inflammation peu marquée, sans lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence de quelques signes inflammatoires. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col modérément inflammatoire, sans lésion intra-épithéliale, ni malignité.",
+                    "Conclusion : Frottis modérément inflammatoire, sans lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col de caractère inflammatoire, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Présence d'une inflammation peu marquée sans caractère spécifique, sans lésion intra-épithéliale ou de malignité."
+                ]),
+                ("col très inflammatoire", [
+                    "Conclusion : Inflammation banale franche, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Ces aspects correspondent à un col de caractère très inflammatoire, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect cytologique d'une inflammation prononcée. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col intensément inflammatoire, sans lésion intra-épithéliale, ni malignité.",
+                    "Conclusion : Col siège d'une inflammation non spécifique, importante. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Frottis inflammatoire marqué. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col de caractère inflammatoire prononcé, sans lésion intra-épithéliale ou malignité."
+                ]),
+                ("col très inflammatoire contrôlé", [
+                    "Conclusion : Frottis inflammatoire marqué, sans lésion intraépithéliale ni malignité, à contrôler.",
+                    "Conclusion : Inflammation banale franche. Absence de lésion intra-épithéliale ou de malignité, à contrôler.",
+                    "Conclusion : Col de caractère inflammatoire prononcé, sans lésion intra-épithéliale ou malignité, à contrôler.",
+                    "Conclusion : Col siège d'une inflammation non spécifique, importante. Absence de lésion intra-épithéliale ou de malignité. À contrôler.",
+                    "Conclusion : Aspect de col remanié, inflammatoire. Absence de lésion intra-épithéliale ou de malignité, à contrôler.",
+                    "Conclusion : Ces aspects correspondent à un col très inflammatoire, ne présentant pas de lésion intra-épithéliale ou de malignité, à contrôler.",
+                    "Conclusion : Aspect cytologique d'une inflammation prononcée. Absence de lésion intra-épithéliale ou de malignité, à contrôler.",
+                    "Conclusion : Col intensément inflammatoire, sans lésion intra-épithéliale ni malignité, à contrôler."
+                ])
            ]
             },
 
@@ -1519,19 +1592,78 @@ button_groups = [
             "sub_name": "atypies",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("ASC-US*", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("ASC-H*", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("AGC*", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("note asc-us", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("note asc-h", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("note AGC", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("HPV faible", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("HPV", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("HPV+CIN1", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("CIN1", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("CIN2", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("CIN13", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("suspect de magnilite", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("ASC-US*", [
+                    "Conclusion : Col montrant des lésions malpighiennes atypiques de signification indéterminée de type ASC-US*.",
+                    "Conclusion : Col présentant des modifications de signification indéterminée (ASC-US*).",
+                    "Conclusion : Présence d'atypies malpighiennes de signification indéterminée (ASC-US*).",
+                    "Conclusion : Présence d'atypies de caractère indéterminé (ASC-US*).",
+                    "Conclusion : Col présentant des modifications de type ASC-US*.",
+                    "Conclusion : Modifications de signification indéterminée (ASC-US*)."
+                ]),
+                ("ASC-H*", [
+                    "Conclusion : Présence de remaniements indéterminés, ne pouvant écarter une lésion de haut grade (ASC-H*).",
+                    "Conclusion : Présence de lésions épithéliales malpighiennes de type ASC-H*, ne permettant pas d'exclure une lésion de haut grade.",
+                    "Conclusion : Col siège d'atypies malpighiennes de type ASC-H* qui n'élimine pas une possible lésion de haut grade.",
+                    "Conclusion : Col siège d'une lésion atypique, ne pouvant éliminer une possible lésion de haut grade (ASC-H*).",
+                    "Conclusion : Présence de lésions malpighiennes de type ASC-H* qui ne peuvent éliminer un haut grade."
+                ]),
+                ("AGC*", [
+                    "Conclusion : Présence de lésion de cellules glandulaires de type AGC*.",
+                    "Conclusion : Col siège de lésion d'AGC*.",
+                    "Conclusion : Lésion de type AGC*."
+                ]),
+                ("note asc-us", [
+                    "*ASC-US : Atypical Squamous Cells of Undetermined Significance.",
+                    "*ASC-US = Atypical Squamous Cells of Undetermined Significance."
+                ]),
+                ("note asc-h", [
+                    "*ASC-H : Atypical Squamous Cells cannot exclude a High intraepithelial lesion."
+                ]),
+                ("note AGC", [
+                    "*AGC: Atypical Glandular Cells."
+                ]),
+                ("HPV faible", [
+                    "Modifications cytologiques en rapport avec la présence d'HPV (lésion intra-épithéliale de bas grade).",
+                    "Col montrant des signes d'une présence d'HPV (lésion intra-épithéliale de bas grade).",
+                    "Signes cytologiques d'infestation à HPV (lésion de bas grade).",
+                    "Présence de signes d'HPV (lésion intra-épithéliale de bas grade).",
+                    "Présence d'HPV (lésion intra-épithéliale de bas grade)."
+                ]),
+                ("HPV", [
+                    "Frottis montrant la présence d'HPV (lésion intra-épithéliale de bas grade).",
+                    "Col présentant des signes d'infestation à HPV (lésion intra-épithéliale de bas grade).",
+                    "Présence d'HPV (lésion intra-épithéliale de bas grade).",
+                    "Signes cytologiques d'HPV (lésion intra-épithéliale de bas grade) sur ce col.",
+                    "Signes cytologiques d'infestation à HPV (lésion de bas grade)."
+                ]),
+                ("HPV+ CIN1", [
+                    "Présence d'une dysplasie CIN1 avec signes d'HPV (lésion intra-épithéliale de bas grade).",
+                    "Lésion dysplasique CIN1 avec HPV (lésion intra-épithéliale de bas grade).",
+                    "Col siège d'une CIN1 dans un contexte d'HPV (lésion intra-épithéliale de bas grade).",
+                    "Aspect d'infestation à HPV avec dysplasie CIN1 (lésion intra-épithéliale de bas grade).",
+                    "Aspect de condylome, associé à une dysplasie CIN1 (lésion intra-épithéliale de bas grade)."
+                ]),
+                ("CIN1", [
+                    "Aspect d'une dysplasie CIN1 (lésion intra-épithéliale de bas grade).",
+                    "Présence d'une dysplasie CIN1 (lésion intra-épithéliale de bas grade).",
+                    "Lésion de CIN1 (lésion de bas grade).",
+                    "Lésion dysplasique CIN1 (lésion intra-épithéliale de bas grade)."
+                ]),
+                ("CIN2", [
+                    "Aspect cytologique en faveur d'une dysplasie CIN2 (lésion intraépithéliale de haut grade).",
+                    "Lésion dysplasique CIN2 (lésion de haut grade).",
+                    "Présence d'une dysplasie CIN2 (lésion de haut grade).",
+                    "Il s'agit de dysplasie CIN2 (lésion intraépithéliale de haut grade)."
+                ]),
+                ("CIN3", [
+                    "Lésion de CIN3 (haut grade).",
+                    "Lésion dysplasique CIN2-CIN3 (haut grade).",
+                    "Aspect en faveur d'une CIN3 (lésion de haut grade)."
+                ]),
+                ("suspect de malignite", [
+                    "Présence de cellules atypiques, suspectes de malignité. À explorer.",
+                    "Présence d'amas cellulaires suspects. À explorer."
+                ])
 
             ]
             },
@@ -1540,13 +1672,41 @@ button_groups = [
             "sub_name": "Vagin",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("V. mycose", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("V. gardnerella", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("V. HPV", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("V. RAS", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("V. atrophique", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("V. dystrophique", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("V. infm", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("V. mycose", ["Pas de phrase"]),
+                ("V. gardnerella", ["Pas de phrase"]),
+                ("V. HPV", ["Pas de phrase"]),
+                ("Vagin RAS", [
+                    "Prélèvement sans lésion intra-épithéliale ou malignité.",
+                    "Absence de lésion intraépithéliale ou de malignité à l'examen.",
+                    "On n'observe pas de lésion intraépithéliale ou de malignité.",
+                    "L'examen ne montre pas de lésion intraépithéliale ou de malignité.",
+                    "Il n'y a pas de lésion intraépithéliale ou de malignité.",
+                    "On ne retrouve pas de lésion intraépithéliale ou de malignité observable sur ce prélèvement.",
+                    "Absence de lésion intraépithéliale ou de malignité à l'examen de ce prélèvement."
+                ]),
+                ("V. atrophique", [
+                    "Modifications de caractère atrophique, sans lésion intraépithéliale ou malignité.",
+                    "Aspect d'atrophie. Absence de lésion intraépithéliale ou de malignité.",
+                    "Frottis atrophique. Absence de lésion intraépithéliale ou de malignité.",
+                    "Frottis atrophique, sans lésion intraépithéliale ou malignité.",
+                    "Il s'agit d'une atrophie. Absence de lésion intraépithéliale ou de malignité."
+                ]),
+                ("V. dystrophique", [
+                    "Aspect dystrophique, sans lésion intra-épithéliale ou malignité.",
+                    "Vagin siège de remaniements dystrophiques. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Frottis dystrophique, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Présence de modifications dystrophiques, sans lésion intra-épithéliale ou malignité.",
+                    "Frottis dystrophique. Absence de lésion intra-épithéliale ou de malignité."
+                ]),
+                ("V. inflammatoire", [
+                    "Remaniements de caractère inflammatoire, sans spécificité. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Frottis présentant des signes d'inflammation non spécifique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Présence de signes inflammatoires, sans caractère spécifique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Frottis de caractère inflammatoire, sans spécificité, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Modifications inflammatoires sans caractère spécifique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Frottis de caractère inflammatoire banal, sans lésion intra-épithéliale ou de malignité.",
+                    "Modifications inflammatoires non spécifiques. Absence de lésion intra-épithéliale ou de malignité."
+                ])
 
             ]
             }
@@ -1619,7 +1779,7 @@ for group in button_groups:
     frame.grid(row=current_row, column=current_column, padx=5, pady=5, sticky="nsew")
 
     # Add a label for the group
-    label = tk.Label(frame, text=group["name"], bg=group["bg_color"], font=("Arial", 12, "bold"))
+    label = tk.Label(frame, text=group["name"], bg=group["bg_color"], font=("Arial", 16, "bold"))
     label.grid(row=0, column=0, columnspan=2, pady=2, sticky="w")
 
     # Create buttons inside the group

@@ -691,10 +691,62 @@ button_groups = [
             "sub_name": "Hautes",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("superieures modéré", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("superieures moyen", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("superieures abondant", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("superieures tres abondant", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("supérieur modéré", [
+                    "Peu abondant, le contingent épithélial reste morphologiquement régulier, provenant des couches supérieures.",
+                    "D'abondance modérée, les groupements épithéliaux rapportés sont formés de cellules malpighiennes intermédiaires et superficielles, d'aspect préservé.",
+                    "D'aspect morphologique régulier, la population épithéliale se montre peu importante. Elle consiste en cellules malpighiennes intermédiaires et superficielles.",
+                    "La population épithéliale desquamée se montre peu importante et consiste en cellules malpighiennes intermédiaires et superficielles, sans anomalie.",
+                    "D'aspect préservé, la desquamation épithéliale se montre peu importante. Elle est faite de cellules malpighiennes intermédiaires et superficielles.",
+                    "De morphologie régulière, la population épithéliale se montre d'abondance modérée, constituée de cellules malpighiennes intermédiaires et superficielles."
+                ]),
+                ("supérieur moyen", [
+                    "La population épithéliale desquamée se montre de moyenne abondance. Elle consiste en cellules malpighiennes intermédiaires et superficielles, sans anomalie.",
+                    "De moyenne abondance, les groupements épithéliaux rapportés sont formés de cellules intermédiaires et superficielles, d'aspect conservé.",
+                    "Les groupements épithéliaux rapportés assez nombreux, dispersés. Leur morphologie est régulière.",
+                    "C'est une desquamation épithéliale de moyenne abondance qui est présente. Elle est constituée de cellules malpighiennes hautes, sans modification particulière.",
+                    "Les groupements épithéliaux rapportés sont assez abondants. Leur morphologie est régulière.",
+                    "Les cellules épithéliales desquamées, assez nombreuses, proviennent des couches supérieures du revêtement, d'aspect régulier.",
+                    "Relativement abondant, le contingent épithélial conserve un aspect morphologiquement régulier, et provient des couches supérieures.",
+                    "La population épithéliale est relativement abondante, formée de cellules intermédiaires et superficielles, montrant un aspect régulier.",
+                    "C'est une population épithéliale de moyenne abondance qu'on retrouve, constituée de cellules malpighiennes hautes, sans modification particulière.",
+                    "D'aspect préservé morphologiquement, le matériel épithélial est moyennement abondant, formé de cellules malpighiennes intermédiaires et superficielles.",
+                    "D'aspect régulier morphologiquement, la desquamation épithéliale est assez abondante, formée d'éléments malpighiens superficiels et intermédiaires.",
+                    "Les cellules épithéliales desquamées, assez nombreuses, proviennent des couches supérieures du revêtement, d'aspect régulier."
+                ]),
+                ("supérieur abondant", [
+                    "D'aspect préservé morphologiquement, le matériel épithélial est important, formé d'éléments malpighiens superficiels et intermédiaires.",
+                    "Abondant, le contingent épithélial conserve un aspect morphologiquement régulier, et provient des couches supérieures.",
+                    "Bien nombreux, les placards épithéliaux présents sont formés de cellules malpighiennes intermédiaires et superficielles, d'aspect régulier.",
+                    "La population épithéliale desquamée se montre abondante et consiste en cellules malpighiennes intermédiaires et superficielles, sans anomalie.",
+                    "Les groupements épithéliaux rapportés sont de type malpighien, en grand nombre. Leur morphologie est régulière.",
+                    "D'aspect préservé, la population épithéliale est de grande abondance. Elle est faite de cellules malpighiennes intermédiaires et superficielles.",
+                    "La population épithéliale de grande abondance, est malpighienne appartenant aux couches supérieures et conserve un aspect régulier.",
+                    "Il s'agit d'une population épithéliale de grande abondance, formée de cellules malpighiennes intermédiaires et superficielles. Elles sont d'aspect régulier.",
+                    "En nombre important, les groupements épithéliaux rapportés sont formés de cellules malpighiennes intermédiaires et superficielles, d'aspect conservé.",
+                    "D'abondance marquée, les placards épithéliaux se composent de cellules malpighiennes intermédiaires et superficielles, sans anomalies.",
+                    "D'aspect préservé morphologiquement, le matériel épithélial est bien abondant, formé d'éléments malpighiens intermédiaires et superficiels.",
+                    "D'aspect préservé morphologiquement, la population épithéliale est de grande abondance, formée d'éléments malpighiens intermédiaires et superficiels.",
+                    "Relativement abondant, le contingent épithélial reste morphologiquement régulier, issu des couches supérieures.",
+                    "La population épithéliale desquamée se montre abondante et consiste en cellules malpighiennes intermédiaires et superficielles, sans anomalie."
+                ]),
+                ("superieur tres abondant", [
+                    "C'est une desquamation épithéliale très riche qu'on retrouve. Elle est constituée de cellules malpighiennes hautes, sans modification particulière.",
+                    "Le matériel épithélial, important, est représenté par des cellules intermédiaires et superficielles, de morphologie conservée.",
+                    "De morphologie régulière, la population épithéliale se montre très abondante. Elle consiste en cellules malpighiennes intermédiaires et superficielles.",
+                    "Les cellules épithéliales desquamées, très nombreuses, proviennent des couches supérieures du revêtement, d'aspect régulier.",
+                    "La population épithéliale très abondante est malpighienne appartenant aux couches supérieures et conserve un aspect régulier.",
+                    "Très abondant, le contingent épithélial reste morphologiquement régulier, provient des couches supérieures.",
+                    "C'est une desquamation épithéliale très riche qu'on retrouve. Elle est constituée de cellules malpighiennes hautes, sans modification particulière.",
+                    "C'est une desquamation épithéliale très riche qui est présente. Elle est constituée de cellules malpighiennes hautes, sans modification particulière.",
+                    "D'aspect préservé, la desquamation épithéliale est très riche. Elle est faite de cellules malpighiennes intermédiaires et superficielles.",
+                    "D'aspect préservé morphologiquement, la desquamation épithéliale est très riche, formée de cellules malpighiennes intermédiaires et superficielles.",
+                    "D'aspect morphologique régulier, la population épithéliale se montre très importante. Elle consiste en cellules malpighiennes intermédiaires et superficielles.",
+                    "Très abondants, les groupements épithéliaux rapportés sont formés de cellules malpighiennes intermédiaires et superficielles, d'aspect préservé.",
+                    "C'est une desquamation épithéliale très riche qu'on retrouve. Elle est constituée de cellules malpighiennes hautes, sans modification particulière.",
+                    "De morphologie conservée, la population épithéliale se montre très importante. Elle consiste en cellules malpighiennes intermédiaires et superficielles.",
+                    "C'est une desquamation épithéliale très riche qu'on retrouve, constituée de cellules malpighiennes hautes, sans modification particulière.",
+                    "Très abondant, le contingent épithélial se montre morphologiquement régulier, issu des couches supérieures."
+                ])
             ]
             },
 
@@ -702,9 +754,49 @@ button_groups = [
             "sub_name": "polymorphes majorite superieures",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("polymorphes modéré superieur+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("polymorphes moyen superieur+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("polymorphes abondant superieur+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("polymorphes modéré superieur+", [
+                    "D'aspect préservé morphologiquement, la population épithéliale est polymorphe modérée, formée principalement d'éléments malpighiennes superficielles et intermédiaires.",
+                    "La population épithéliale desquamée se montre peu importante et va consister surtout en cellules malpighiennes intermédiaires et superficielles, sans anomalie.",
+                    "D'aspect préservé morphologiquement, la desquamation épithéliale est modérée, formée surtout d'éléments malpighiens intermédiaires et superficiels.",
+                    "D'aspect préservé morphologiquement, la population épithéliale est polymorphe, modérée, formée surtout d'éléments malpighiennes intermédiaires et superficielles.",
+                    "D'aspect morphologique régulier, la population épithéliale se montre peu importante. Elle se compose avant tout de cellules malpighiennes intermédiaires et superficielles.",
+                    "De morphologie régulière, la population épithéliale se montre d'abondance modérée. Elle consiste principalement en cellules malpighiennes intermédiaires et superficielles.",
+                    "La population épithéliale, plutôt modérée, se compose d'éléments malpighiens en majorité hauts, sans irrégularité observable.",
+                    "Les groupements épithéliaux rapportés sont peu nombreux, polymorphes. Leur morphologie est régulière.",
+                    "D'aspect régulier morphologiquement, la population épithéliale est assez modérée, polymorphe, formée d'éléments malpighiennes superficielles et intermédiaires.",
+                    "D'aspect régulier, la desquamation épithéliale se montre modérée, essentiellement des éléments malpighiens superficielles et intermédiaires."
+                ]),
+                ("polymorphe moyen superieur+", [
+                    "D'abondance moyenne, les placards épithéliaux sont polymorphes, dominés par les cellules malpighiennes intermédiaires et superficielles, d'aspect régulier.",
+                    "D'aspect régulier, la desquamation épithéliale se montre moyennement abondante, essentiellement des éléments malpighiens superficielles et intermédiaires.",
+                    "La population épithéliale, plutôt abondante, se compose d'éléments malpighiens en majorité hauts, sans irrégularité observable.",
+                    "Il s'agit d'une population épithéliale assez abondante, composée en majorité de cellules malpighiennes intermédiaires et superficielles. Elles sont d'aspect régulier.",
+                    "D'aspect conservé, les cellules appartiennent en majorité aux couches hautes et sont d'abondance moyenne.",
+                    "Assez abondant, le contingent épithélial reste morphologiquement régulier, appartenant surtout aux couches supérieures.",
+                    "C'est une population épithéliale moyennement abondante qu'on retrouve. Elle est constituée surtout de cellules malpighiennes hautes, sans modification particulière.",
+                    "Les cellules épithéliales desquamées proviennent avant tout des couches supérieures du revêtement, d'aspect régulier.",
+                    "Assez abondant, le contingent épithélial reste morphologiquement régulier, provenant principalement des couches supérieures.",
+                    "De morphologie conservée, la population épithéliale se montre assez importante, polymorphe. Elle consiste surtout en cellules malpighiennes intermédiaires et superficielles.",
+                    "D'aspect régulier, la desquamation épithéliale se montre de moyenne abondance, faite d'éléments malpighiens superficielles et intermédiaires, majoritairement.",
+                    "La population épithéliale, d'abondance moyenne, est malpighienne, appartenant surtout aux couches supérieures et conserve un aspect régulier.",
+                    "La population épithéliale est assez abondante, formée de cellules intermédiaires et superficielles majoritaires, montrant un aspect régulier.",
+                    "D'aspect régulier morphologiquement, la desquamation épithéliale est assez abondante, dominée par les éléments malpighiens superficielles et intermédiaires."
+                ]),
+                ("polymorphe abondant superieur +", [
+                    "D'aspect conservé, les cellules appartiennent en majorité aux couches hautes et sont nombreuses.",
+                    "Abondant, le contingent épithélial reste morphologiquement régulier, provenant principalement des couches supérieures.",
+                    "La population épithéliale est abondante, formée de cellules intermédiaires et superficielles majoritaires, montrant un aspect régulier.",
+                    "D'aspect préservé morphologiquement, la desquamation épithéliale est abondante, formée de cellules malpighiennes intermédiaires et superficielles majoritairement.",
+                    "Abondant, la population épithéliale reste morphologiquement régulière, issue en majorité des couches supérieures.",
+                    "La population épithéliale se montre abondante et consiste en cellules malpighiennes, représentant majoritairement les couches supérieures du revêtement, et qui conservent un aspect régulier.",
+                    "De morphologie régulière, la population épithéliale se montre abondante. Elle consiste principalement en cellules malpighiennes intermédiaires et superficielles.",
+                    "Abondant, le matériel épithélial reste morphologiquement régulier, issu principalement des couches supérieures du revêtement.",
+                    "Abondants, les groupements épithéliaux rapportés sont formés essentiellement de cellules malpighiennes intermédiaires et superficielles, d'aspect préservé.",
+                    "De morphologie régulière, la population épithéliale est abondante, en majorité composée de cellules malpighiennes intermédiaires et superficielles.",
+                    "D'aspect préservé morphologiquement, la desquamation épithéliale est abondante, formée de cellules malpighiennes intermédiaires et superficielles majoritairement.",
+                    "La population épithéliale desquamée se montre nombreuse. Elle est composée surtout de cellules malpighiennes intermédiaires et superficielles, sans anomalie.",
+                    "Abondant, le contingent épithélial se montre morphologiquement régulier, issu des couches supérieures principalement."
+                ])
             ]
             },
 
@@ -712,9 +804,48 @@ button_groups = [
             "sub_name": "polymorphes majorite profondes",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("polymorphes modéré profondes+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("polymorphes moyen profondes+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("polymorphes abondant profondes+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("polymorphes modéré profondes+", [
+                    "D'aspect régulier morphologiquement, la desquamation épithéliale est d'abondance modérée, dominée par les éléments malpighiens profonds.",
+                    "Peu abondants, les groupements épithéliaux rapportés sont formés majoritairement de cellules malpighiennes profondes. Leur morphologie est régulière.",
+                    "Peu riche, le contingent épithélial conserve un aspect morphologiquement régulier, et provient en majorité des couches basses.",
+                    "Les groupements épithéliaux rapportés sont peu nombreux, dispersés, essentiellement des couches profondes, de morphologie régulière.",
+                    "La population épithéliale se montre peu importante. Elle consiste principalement en cellules malpighiennes profondes, sans irrégularité observable.",
+                    "D'aspect préservé morphologiquement, la population épithéliale est polymorphe d'abondance modérée, formée principalement d'éléments malpighiens profonds.",
+                    "De morphologie régulière, la population épithéliale se montre modérée. Elle consiste principalement en cellules malpighiennes profondes.",
+                    "D'aspect régulier, la desquamation épithéliale est d'abondance modérée, hétérogène composée surtout d'éléments malpighiens profonds.",
+                    "D'aspect morphologique conservé, la population épithéliale se montre peu importante, de composition hétérogène. Elle consiste principalement en cellules malpighiennes profondes.",
+                    "La population épithéliale desquamée se montre peu importante et consiste principalement en cellules malpighiennes profondes, sans anomalie.",
+                    "Peu nombreux, la population épithéliale est principalement formée de cellules malpighiennes profondes. Elles sont d'aspect régulier.",
+                    "D'aspect préservé, la desquamation épithéliale est d'abondance modérée, formée de cellules majoritairement profondes."
+                ]),
+                ("polymorphe moyen profondes+", [
+                    "Les groupements épithéliaux rapportés sont issus des couches basses, assez nombreux, dispersés. Leur morphologie est régulière.",
+                    "Il s'agit d'une population épithéliale de moyenne abondance, composée en majorité de cellules malpighiennes profondes. Elles sont d'aspect régulier.",
+                    "Assez riche, le matériel épithélial reste morphologiquement régulier, issu principalement des couches basses du revêtement.",
+                    "Assez nombreux, la population épithéliale est principalement formée de cellules malpighiennes profondes. Elles sont d'aspect régulier.",
+                    "La desquamation épithéliale est de moyenne abondance, faite de cellules principalement profondes, sans modification notable.",
+                    "D'aspect conservé, les cellules appartiennent en majorité aux couches profondes et sont assez nombreuses.",
+                    "Les groupements épithéliaux rapportés sont polymorphes de type malpighien, assez nombreux, profonds. Leur morphologie est régulière.",
+                    "De morphologie régulière, la population épithéliale se montre de moyenne abondance. Elle consiste principalement en cellules malpighiennes profondes.",
+                    "D'aspect morphologique conservé, la desquamation épithéliale se montre assez importante et consiste surtout en cellules malpighiennes profondes.",
+                    "La desquamation épithéliale est de moyenne abondance, faite de cellules principalement profondes, sans modification notable.",
+                    "C'est une desquamation épithéliale de moyenne abondance qu'on retrouve. Elle est constituée principalement de cellules malpighiennes profondes, sans modification particulière.",
+                    "La population épithéliale desquamée se montre assez importante et consiste principalement en cellules malpighiennes profondes, sans anomalie."
+                ]),
+                ("polymorphe abondant profondes+", [
+                    "La population épithéliale est abondante, faite de cellules malpighiennes, profondes en majorité et qui conservent un aspect régulier.",
+                    "De morphologie conservée, la population épithéliale se montre assez importante, polymorphe. Elle consiste surtout en cellules malpighiennes profondes.",
+                    "C'est une population épithéliale abondante qu'on retrouve. Elle est constituée surtout de cellules malpighiennes profondes, sans modification particulière.",
+                    "Abondante, la desquamation épithéliale se compose en majorité de cellules profondes, d'aspect régulier.",
+                    "De morphologie conservée, la population épithéliale se montre polymorphe, assez importante. Elle est formée essentiellement de cellules malpighiennes profondes.",
+                    "D'aspect préservé morphologiquement, la population épithéliale est abondante, en majorité des cellules malpighiennes profondes.",
+                    "La population épithéliale est abondante. Elle consiste principalement en cellules malpighiennes, profondes qui conservent un aspect régulier.",
+                    "Nombreux, la population épithéliale est principalement formée de cellules malpighiennes profondes. Elles sont d'aspect régulier.",
+                    "D'aspect régulier, la desquamation épithéliale se montre abondante, faite d'éléments malpighiens profonds, majoritairement.",
+                    "D'aspect morphologique conservé, la population épithéliale se montre assez importante, de composition hétérogène. Elle consiste principalement en cellules malpighiennes profondes.",
+                    "C'est une desquamation épithéliale abondante qu'on retrouve. Elle est constituée principalement de cellules malpighiennes profondes, sans modification particulière.",
+                    "La population épithéliale est abondante, faite de cellules malpighiennes, profondes en majorité et qui conservent un aspect régulier."
+                ])
             ]
             },
 
@@ -722,9 +853,52 @@ button_groups = [
             "sub_name": "profondes",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("atrophique modéré", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("atrophique moyen", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("atrophique abondant", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("atrophique modéré", [
+                    "Il s'agit d'une population épithéliale peu abondante, composée de cellules malpighiennes profondes. Elles sont d'aspect régulier.",
+                    "D'aspect préservé, la population épithéliale est modérée. Elle est faite de cellules malpighiennes profondes.",
+                    "Peu abondant, le contingent épithélial reste morphologiquement régulier, provenant des couches basses.",
+                    "D'aspect morphologique régulier, la population épithéliale se montre peu importante. Elle consiste en cellules malpighiennes profondes.",
+                    "D'aspect régulier, la desquamation épithéliale se montre d'abondance modérée, formée d'éléments malpighiens profonds.",
+                    "D'aspect régulier, la desquamation épithéliale est assez modérée, formée d'éléments malpighiens profonds.",
+                    "D'aspect morphologique conservé, la population épithéliale se montre peu importante. Elle consiste en cellules malpighiennes profondes.",
+                    "Les groupements épithéliaux rapportés sont peu nombreux, atrophiques, dispersés, de morphologie régulière.",
+                    "D'aspect préservé, la desquamation épithéliale est modérée, formée de cellules malpighiennes profondes.",
+                    "La population épithéliale est modérée. Elle est constituée de cellules malpighiennes profondes, sans modification notable.",
+                    "La population épithéliale d'abondance modérée, est malpighienne, atrophique et conserve un aspect régulier."
+                ]),
+                ("atrophique moyen", [
+                    "La population épithéliale est de moyenne abondance, constituée de cellules malpighiennes, représentant les couches basses du revêtement, et conservant un aspect régulier.",
+                    "D'aspect préservé, la population épithéliale est de moyenne abondance, formée de cellules malpighiennes profondes.",
+                    "La population épithéliale est d'abondance moyenne. Elle consiste en cellules malpighiennes, profondes qui conservent un aspect régulier.",
+                    "Le matériel épithélial, assez riche, est représenté par des cellules profondes, de morphologie conservée.",
+                    "De moyenne abondance, les groupements épithéliaux rapportés sont formés de cellules malpighiennes profondes, d'aspect régulier.",
+                    "La population épithéliale desquamée se montre assez importante et va consister en cellules malpighiennes profondes, sans anomalie.",
+                    "D'aspect conservé, les cellules appartiennent aux couches profondes et sont d'abondance moyenne.",
+                    "La population épithéliale desquamée se montre assez importante. Elle consiste en cellules malpighiennes profondes, sans modification anormale.",
+                    "La population épithéliale est de moyenne abondance, constituée de cellules malpighiennes, représentant les couches basses du revêtement, et conservant un aspect régulier.",
+                    "D'aspect préservé morphologiquement, la desquamation épithéliale est de moyenne abondance, formée de cellules malpighiennes profondes.",
+                    "Assez abondant, le matériel épithélial reste morphologiquement régulier, issu des couches basses du revêtement.",
+                    "C'est une desquamation épithéliale de moyenne abondance, constituée de cellules malpighiennes profondes, sans modification notable.",
+                    "D'aspect morphologique conservé, la desquamation épithéliale se montre assez importante. Elle consiste en cellules malpighiennes profondes."
+                ]),
+                ("atrophique abondant", [
+                    "D'aspect régulier morphologiquement, la population épithéliale est abondante, formée d'éléments malpighiens profondes.",
+                    "D'aspect régulier morphologiquement, la desquamation épithéliale est abondante, formée d'éléments malpighiens profonds.",
+                    "D'aspect préservé, la population épithéliale est abondante, formée de cellules malpighiennes profondes.",
+                    "Abondant, le contingent épithélial se montre morphologiquement régulier, issu des couches basses.",
+                    "Abondants, les groupements épithéliaux rapportés sont malpighiens, formés de cellules malpighiennes profondes, d'aspect régulier.",
+                    "Abondants, les groupements épithéliaux sont formés de cellules malpighiennes profondes, morphologiquement régulier.",
+                    "C'est une population épithéliale abondante qu'on retrouve, constituée de cellules malpighiennes profondes, sans modification particulière.",
+                    "Les groupements épithéliaux rapportés sont nombreux, de caractère atrophique. Leur morphologie est régulière.",
+                    "De morphologie conservée, la population épithéliale se montre importante. Elle est formée de cellules malpighiennes profondes.",
+                    "D'aspect conservé, les cellules appartiennent aux couches profondes et sont abondants.",
+                    "D'aspect préservé morphologiquement, la population épithéliale est abondante, formée de cellules malpighiennes profondes.",
+                    "Les groupements épithéliaux rapportés, atrophiques, sont nombreux, dispersés. Leur morphologie est régulière.",
+                    "D'aspect préservé morphologiquement, la desquamation épithéliale est abondante, formée d'éléments malpighiens profonds.",
+                    "D'aspect régulier morphologiquement, la population épithéliale est abondante, formée d'éléments malpighiens profondes.",
+                    "La population épithéliale se montre importante. Elle consiste en cellules malpighiennes profondes, sans irrégularité observable.",
+                    "La population épithéliale desquamée se montre abondante. Elle consiste en cellules malpighiennes profondes, sans anomalie."
+                ])
             ]
             },
 
@@ -732,9 +906,35 @@ button_groups = [
             "sub_name": "Hautes + cytolyse",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("superieures modéré cytolyse+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("superieures moyen cytolyse+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("superieures abondant cytolyse+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("supérieures modéré cytolyse+", [
+                    "D'aspect conservé, les cellules appartiennent aux couches hautes et sont d'abondance modérée, un peu cytolytiques.",
+                    "Les groupements épithéliaux rapportés sont peu nombreux, dispersés, parfois cytolytiques, de morphologie régulière.",
+                    "De morphologie conservée, la desquamation épithéliale est d'abondance modérée. Elle se compose de cellules intermédiaires et superficielles, avec des variations cytolytiques.",
+                    "D'abondance modérée, les groupements épithéliaux rapportés sont formés de cellules malpighiennes intermédiaires et superficielles, d'aspect régulier, cytolytiques par endroits.",
+                    "D'aspect préservé, la population épithéliale est modérée, cytolytique, formée de cellules malpighiennes intermédiaires et superficielles.",
+                    "D'aspect préservé, la desquamation épithéliale se montre peu importante. Elle est faite de cellules malpighiennes intermédiaires et superficielles, siège d'une cytolyse.",
+                    "D'aspect préservé, la population épithéliale est modérée, cytolytique, formée de cellules malpighiennes intermédiaires et superficielles.",
+                    "La population épithéliale desquamée se montre d'abondance modérée. Elle consiste en cellules malpighiennes intermédiaires et superficielles, présentant des remaniements cytolytiques, sans anomalie.",
+                    "D'abondance modérée, les placards épithéliaux sont formés de cellules malpighiennes intermédiaires et superficielles, présentant des phénomènes de cytolyse, d'aspect régulier.",
+                    "C'est une population épithéliale modérée qui est présente. Elle est constituée de cellules malpighiennes hautes, en partie cytolytiques, sans autre modification.",
+                    "D'aspect régulier, la desquamation épithéliale se montre modérée, formée d'éléments malpighiens superficiels et intermédiaires, certains cytolytiques.",
+                    "D'aspect préservé, la population épithéliale est modérée, cytolytique. Elle est faite de cellules malpighiennes intermédiaires et superficielles."
+                ]),
+                ("supérieur moyen cytolyse+", [
+                    "La population épithéliale est abondante. Elle est constituée de cellules malpighiennes hautes qui sont le siège de phénomènes de cytolyse, sans atypies notables.",
+                    "La desquamation épithéliale est abondante, faite de cellules hautes, sans modification notable, en dehors de la cytolyse.",
+                    "D'aspect préservé, la desquamation épithéliale est moyennement abondante, formée de cellules malpighiennes intermédiaires et superficielles, avec cytolyse physiologique.",
+                    "La population épithéliale est abondante. Elle consiste en cellules malpighiennes, intermédiaires et superficielles qui conservent un aspect régulier; de la cytolyse est constatée.",
+                    "La population épithéliale est assez abondante, composée de cellules malpighiennes, représentant les couches supérieures du revêtement, montrant de la cytolyse, régulières.",
+                    "D'aspect régulier morphologiquement, la desquamation épithéliale est assez abondante, formée d'éléments malpighiens superficiels et intermédiaires. Ils montrent de la cytolyse.",
+                    "La population épithéliale abondante est malpighienne. Les cellules appartiennent aux couches supérieures, cytolytiques et conservent un aspect régulier.",
+                    "D'aspect préservé, la desquamation épithéliale est assez importante. Elle est faite de cellules malpighiennes intermédiaires et superficielles plus ou moins cytolytiques.",
+                    "Les groupements épithéliaux rapportés sont de type malpighien, relativement nombreux. Elles sont en partie cytolytiques, régulières.",
+                    "La population épithéliale desquamée se montre assez importante. Elle consiste en cellules malpighiennes intermédiaires et superficielles, avec des éléments cytolytiques, sans modification anormale.",
+                    "Abondants, les groupements épithéliaux rapportés sont formés de cellules intermédiaires et superficielles, plus ou moins cytolytiques, d'aspect conservé.",
+                    "La population épithéliale est abondante, faite de cellules malpighiennes, intermédiaires et superficielles qui conservent un aspect régulier. On y observe de la cytolyse."
+                ]),
+                ("superieures abondant cytolyse+", ["Pas de phrase"])
             ]
             },
 
@@ -742,9 +942,53 @@ button_groups = [
             "sub_name": "Cylindriques",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("Cylindriques rares", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Cylindriques modere", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Cylindriques abondant", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("cylindriques rares", [
+                    "Des cellules mucipares sont observées, préservées.",
+                    "Présence de quelques cellules cylindriques, régulières.",
+                    "Des cellules cylindriques assez rares sont présentes différenciées.",
+                    "On retrouve quelques cellules endocervicales.",
+                    "La population endocervicale est pauvre, sans anomalie.",
+                    "La desquamation endocervicale est faible, constituée de cellules mucipares normales.",
+                    "Des cellules cylindriques assez rares sont présentes différenciées.",
+                    "Des cellules mucipares sont observées, préservées.",
+                    "De rares cellules cylindriques sont rencontrées, conservées.",
+                    "De rares cellules cylindriques sont rencontrées, conservées.",
+                    "Les éléments endocervicaux sont peu nombreux, sans irrégularité.",
+                    "La desquamation endocervicale est faible, constituée de cellules mucipares normales.",
+                    "Des cellules mucipares sont observées, préservées."
+                ]),
+                ("cylindrique modérées", [
+                    "La population endocervicale est modérée, sans anomalie.",
+                    "Les groupements endocervicaux sont peu nombreux, sans irrégularité.",
+                    "Présence de quelques placards de cellules cylindriques.",
+                    "Des cellules cylindriques sont rencontrées, conservées.",
+                    "On retrouve des groupements de cellules endocervicales.",
+                    "La population endocervicale est modérée, sans anomalie.",
+                    "La desquamation endocervicale est modérée, constituée de cellules mucipares normales.",
+                    "La population endocervicale est modérée, sans anomalie.",
+                    "Présence de quelques placards de cellules cylindriques.",
+                    "Présence de quelques placards de cellules cylindriques.",
+                    "Les groupements endocervicaux sont peu nombreux, sans irrégularité.",
+                    "Des cellules mucipares sont observées, préservées.",
+                    "Des cellules cylindriques sont présentes différenciées.",
+                    "Des cellules mucipares sont observées, préservées.",
+                    "Les groupements endocervicaux sont peu nombreux, sans irrégularité."
+                ]),
+                ("cylindrique abondant", [
+                    "De nombreuses cellules cylindriques sont rencontrées, conservées.",
+                    "Des placards de cellules mucipares sont observés, préservés.",
+                    "Des placards de cellules mucipares sont observés, préservés.",
+                    "Des cellules cylindriques assez nombreuses, sont présentes, différenciées.",
+                    "De nombreuses cellules cylindriques sont rencontrées, conservées.",
+                    "On retrouve des cellules endocervicales abondantes.",
+                    "Présence de plusieurs placards de cellules cylindriques, régulières.",
+                    "De nombreuses cellules cylindriques sont rencontrées, conservées.",
+                    "De nombreuses cellules cylindriques sont rencontrées, conservées.",
+                    "Les éléments endocervicaux sont nombreux, sans irrégularité.",
+                    "On retrouve des cellules endocervicales abondantes.",
+                    "On retrouve des cellules endocervicales abondantes.",
+                    "La population endocervicale est riche, sans anomalie."
+                ])
             ]
             },
 
@@ -752,10 +996,64 @@ button_groups = [
             "sub_name": "Cylindriques + Métaplasie",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("Cylindriques rares Métaplasie+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Cylindriques modere Métaplasie++", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Cylindriques abondant Métaplasie+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Cylindriques abondant Métaplasie++", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("cylindrique modéré métaplasie+", [
+                    "La population endocervicale est modérée, régulière, partiellement métaplasique.",
+                    "La population endocervicale est modérée, régulière, partiellement métaplasique.",
+                    "On retrouve des cellules endocervicales, certaines modifiées par la métaplasie.",
+                    "Présence de placards de cellules cylindriques, régulières ou transformées par la métaplasie.",
+                    "Présence de placards de cellules cylindriques, régulières ou transformées par la métaplasie.",
+                    "La population endocervicale est modérée, régulière, partiellement métaplasique.",
+                    "Présence de placards de cellules cylindriques, régulières ou transformées par la métaplasie.",
+                    "Présence de placards de cellules cylindriques, régulières ou transformées par la métaplasie.",
+                    "Présence de placards de cellules cylindriques, régulières ou transformées par la métaplasie.",
+                    "La desquamation endocervicale est modérée, constituée de cellules mucipares normales, certaines métaplasiques.",
+                    "Des cellules cylindriques peu nombreuses, sont présentes, différenciées ou parfois en métaplasie."
+                ]),
+                ("cylindrique modéré métaplasie++", [
+                    "Les éléments endocervicaux sont peu nombreux, sans irrégularité, volontiers en métaplasie.",
+                    "Des cellules cylindriques sont rencontrées, le plus souvent métaplasiques.",
+                    "Des placards de cellules mucipares sont observés, la plupart métaplasiques.",
+                    "La population endocervicale est modérée, régulière, métaplasique.",
+                    "Présence de placards de cellules cylindriques, généralement transformées par la métaplasie.",
+                    "Des cellules cylindriques peu nombreuses, sont présentes, métaplasiques pour la plupart.",
+                    "La desquamation endocervicale est modérée, constituée de cellules mucipares normales ou plus souvent métaplasiques.",
+                    "Les éléments endocervicaux sont peu nombreux, sans irrégularité, volontiers en métaplasie.",
+                    "On retrouve des cellules endocervicales, plusieurs modifiées par la métaplasie.",
+                    "Présence de placards de cellules cylindriques, généralement transformées par la métaplasie.",
+                    "Des cellules cylindriques sont rencontrées, le plus souvent métaplasiques.",
+                    "Les éléments endocervicaux sont peu nombreux, sans irrégularité, volontiers en métaplasie.",
+                    "Les éléments endocervicaux sont peu nombreux, sans irrégularité, volontiers en métaplasie."
+                ]),
+                ("cylindrique abondant métaplasie+", [
+                    "Présence de plusieurs placards de cellules cylindriques, régulières ou transformées par la métaplasie.",
+                    "La population endocervicale est riche, régulière, partiellement métaplasique.",
+                    "Présence de plusieurs placards de cellules cylindriques, régulières ou transformées par la métaplasie.",
+                    "La population endocervicale est riche, régulière, partiellement métaplasique.",
+                    "Des cellules cylindriques assez nombreuses, sont présentes, différenciées ou parfois en métaplasie.",
+                    "De nombreuses cellules cylindriques sont rencontrées, conservées ou parfois métaplasiques.",
+                    "La population endocervicale est riche, régulière, partiellement métaplasique.",
+                    "De nombreuses cellules cylindriques sont rencontrées, conservées ou parfois métaplasiques.",
+                    "Présence de plusieurs placards de cellules cylindriques, régulières ou transformées par la métaplasie.",
+                    "On retrouve des cellules endocervicales abondantes, certaines modifiées par la métaplasie.",
+                    "Des cellules cylindriques assez nombreuses, sont présentes, différenciées ou parfois en métaplasie.",
+                    "Des cellules cylindriques assez nombreuses, sont présentes, différenciées ou parfois en métaplasie."
+                ]),
+                ("cylindrique abondant métaplasie++", [
+                    "Présence de plusieurs placards de cellules cylindriques, généralement transformées par la métaplasie.",
+                    "Des cellules cylindriques assez nombreuses, sont présentes, métaplasiques pour la plupart.",
+                    "De nombreuses cellules cylindriques sont rencontrées, le plus souvent métaplasiques.",
+                    "La population endocervicale est riche, régulière, métaplasique.",
+                    "Des cellules cylindriques assez nombreuses, sont présentes, métaplasiques pour la plupart.",
+                    "Les éléments endocervicaux sont nombreux, sans irrégularité, volontiers en métaplasie.",
+                    "On retrouve des cellules endocervicales abondantes, plusieurs modifiées par la métaplasie.",
+                    "La desquamation endocervicale est abondante, constituée de cellules mucipares normales ou plus souvent métaplasiques.",
+                    "De nombreuses cellules cylindriques sont rencontrées, le plus souvent métaplasiques.",
+                    "Les éléments endocervicaux sont nombreux, sans irrégularité, volontiers en métaplasie.",
+                    "Présence de plusieurs placards de cellules cylindriques, généralement transformées par la métaplasie.",
+                    "On retrouve des cellules endocervicales abondantes, plusieurs modifiées par la métaplasie.",
+                    "Des cellules cylindriques assez nombreuses, sont présentes, métaplasiques pour la plupart.",
+                    "La desquamation endocervicale est abondante, constituée de cellules mucipares normales ou plus souvent métaplasiques."
+                ])
 
             ]
             },
@@ -764,7 +1062,26 @@ button_groups = [
             "sub_name": "Cytolyse",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("Cytolyse", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("cytolyse", [
+                    "Des modifications cytolytiques sont observées.",
+                    "Des remaniements en rapport avec la cytolyse sont constatées.",
+                    "Des phénomènes de cytolyse s'observent.",
+                    "Des modifications cytolytiques sont observées.",
+                    "Des phénomènes de cytolyse s'observent.",
+                    "Présence d'une cytolyse physiologique.",
+                    "Des changements cytolytiques sont notés.",
+                    "Des changements cytolytiques sont notés.",
+                    "Des modifications cytolytiques sont observées.",
+                    "Des modifications cytolytiques sont observées.",
+                    "Des modifications cytolytiques sont observées.",
+                    "Des changements cytolytiques sont notés.",
+                    "On observe des remaniements cytolytiques.",
+                    "Des remaniements en rapport avec la cytolyse sont constatées.",
+                    "Présence d'une cytolyse physiologique.",
+                    "Présence d'une cytolyse physiologique.",
+                    "Des modifications cytolytiques sont observées.",
+                    "Des phénomènes de cytolyse s'observent."
+                ])
             ]
             },
 
@@ -772,12 +1089,89 @@ button_groups = [
             "sub_name": "Malpighien particulier",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("clue-cells+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("clue-cells++", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("koilocytes", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("koilocytes et dyskeratocytes", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("dyskératocytes", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("binuclées", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("clue-cells+", [
+                    "Des clue-cells sont observés, au sein de la desquamation épithéliale.",
+                    "On rencontre des clue-cells.",
+                    "Des clue-cells sont présents parmi les cellules malpighiennes.",
+                    "Des clue-cells sont observés, au sein de la desquamation épithéliale.",
+                    "Des éléments à cytoplasme granulaire du type clue-cell sont présents.",
+                    "Des éléments à cytoplasme granulaire du type clue-cell sont présents.",
+                    "Des clue-cells sont observés.",
+                    "Des éléments à cytoplasme granulaire du type clue-cell sont présents.",
+                    "Des éléments à cytoplasme granulaire du type clue-cell sont présents.",
+                    "Des clue-cells sont présents parmi les cellules malpighiennes.",
+                    "La population épithéliale a intéressé des clue-cells.",
+                    "Des clue-cells sont observés."
+                ]),
+                ("clue-cell++", [
+                    "La population épithéliale contient un grand nombre de clue-cells.",
+                    "La population épithéliale contient un grand nombre de clue-cells.",
+                    "La population épithéliale contient un grand nombre de clue-cells.",
+                    "La population épithéliale contient un grand nombre de clue-cells.",
+                    "Plusieurs clue-cells sont présents parmi les cellules malpighiennes.",
+                    "On rencontre des clue-cells en abondance.",
+                    "De nombreux clue-cells sont observés.",
+                    "Des altérations de type clue-cell sont constatées, nombreuses.",
+                    "La population épithéliale contient un grand nombre de clue-cells.",
+                    "Des altérations de type clue-cell sont constatées, nombreuses.",
+                    "De nombreux éléments à cytoplasme granulaire du type clue-cell sont présents.",
+                    "De nombreux éléments à cytoplasme granulaire du type clue-cell sont présents.",
+                    "On retrouve en abondance des clue-cells au sein de la population malpighienne.",
+                    "Plusieurs clue-cells sont présents parmi les cellules malpighiennes."
+                ]),
+                ("koilocytes", [
+                    "Des modifications correspondant à des koïlocytes sont notées.",
+                    "Des altérations cellulaires correspondant à des koïlocytes sont notées.",
+                    "Des altérations cellulaires correspondant à des koïlocytes sont notées.",
+                    "Présence de koïlocytes.",
+                    "Des koïlocytes sont présents.",
+                    "Des altérations cellulaires correspondant à des koïlocytes sont notées.",
+                    "Présence de koïlocytes.",
+                    "Présence de koïlocytes.",
+                    "Des modifications correspondant à des koïlocytes sont notées.",
+                    "Des koïlocytes sont présents.",
+                    "Présence de koïlocytes.",
+                    "On rencontre des cellules de type koïlocyte.",
+                    "Des modifications cellulaires compatibles avec des koïlocytes sont notées.",
+                    "Présence de koïlocytes.",
+                    "S'y associent des éléments de type koïlocyte.",
+                    "Des altérations cellulaires correspondant à des koïlocytes sont notées.",
+                    "On note la présence de koïlocytes."
+                ]),
+                ("koilocytes et dyskératocytes", [
+                    "On retrouve aussi des koïlocytes épars, à côté de dyskératocytes.",
+                    "Des koïlocytes et dyskératocytes sont présents.",
+                    "Des altérations cellulaires correspondant à des koïlocytes sont notées, ainsi que de la dyskératose.",
+                    "Des altérations cellulaires correspondant à des koïlocytes sont notées, ainsi que de la dyskératose.",
+                    "Présence de koïlocytes associés à des dyskératocytes.",
+                    "Des modifications correspondant à des dyskératocytes et des koïlocytes sont notées.",
+                    "Des koïlocytes et dyskératocytes sont identifiés.",
+                    "Des modifications cellulaires compatibles avec des koïlocytes sont notées, escortés de dyskératocytes.",
+                    "Des koïlocytes et dyskératocytes sont présents.",
+                    "Des altérations cellulaires compatibles avec des koïlocytes sont notées, ainsi que des dyskératocytes.",
+                    "Des koïlocytes et dyskératocytes sont identifiés.",
+                    "Des koïlocytes et dyskératocytes sont identifiés.",
+                    "Des modifications cellulaires compatibles avec des koïlocytes sont notées, escortés de dyskératocytes."
+                ]),
+                ("dyskératocytes", [
+                    "Des dyskératocytes sont présents.",
+                    "On retrouve des dyskératocytes.",
+                    "On rencontre des cellules de type dyskératocyte.",
+                    "Des altérations cellulaires dyskératosiques sont notées.",
+                    "Des modifications correspondant à des dyskératocytes sont notées.",
+                    "Des modifications correspondant à des dyskératocytes sont notées.",
+                    "On retrouve aussi épars des dyskératocytes.",
+                    "S'y associent des éléments dyskératosiques.",
+                    "On retrouve des dyskératocytes.",
+                    "Des modifications cellulaires dyskératosiques s'observent.",
+                    "Des modifications correspondant à des dyskératocytes sont notées.",
+                    "Des dyskératocytes sont présents.",
+                    "On retrouve aussi des dyskératocytes.",
+                    "Des modifications cellulaires dyskératosiques s'observent.",
+                    "S'y associent des éléments dyskératosiques.",
+                    "On retrouve aussi épars des dyskératocytes."
+                ]),
+                ("binuclées", ["Pas de Phrase"])
 
             ]
             },
@@ -786,12 +1180,88 @@ button_groups = [
             "sub_name": "irritation",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("irritation+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("irritation++", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("irritation+++", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("exocytose+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("exocytose++", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("exocytose+++", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
+                ("irritation +", [
+                    "Des remaniements irritatifs sont aussi constatés.",
+                    "On note des groupements de caractère irrité.",
+                    "On note la présence de remaniements irritatifs.",
+                    "On note la présence de remaniements irritatifs.",
+                    "On note la présence d'altérations irritatives.",
+                    "Des amas irrités sont rencontrés.",
+                    "Placards malpighiens conservés et irrités se côtoient.",
+                    "A noter la présence de changements irritatifs.",
+                    "On rencontre des placards irrités.",
+                    "On note la présence de remaniements irritatifs.",
+                    "Des amas irrités sont rencontrés.",
+                    "A noter la présence de changements irritatifs.",
+                    "Parmi les groupements épithéliaux, sont présents des placards irrités.",
+                    "Présence de groupements d'aspect irrité.",
+                    "Des remaniements irritatifs sont notés."
+                ]),
+                ("irritation++", [
+                    "On note la présence de francs remaniements irritatifs.",
+                    "Des amas très irrités sont rencontrés.",
+                    "On rencontre côte à côte des placards malpighiens préservés et des amas très irrités.",
+                    "Placards malpighiens conservés ou bien très irrités se côtoient.",
+                    "Des remaniements irritatifs, assez marqués, sont aussi constatés.",
+                    "Présence de placards de caractère très irrité.",
+                    "Placards malpighiens conservés ou bien très irrités se côtoient.",
+                    "Des cellules modifiées, de caractère bien irrité, sont présentes.",
+                    "On observe la présence de plusieurs changements irritatifs.",
+                    "On rencontre des placards irrités, nombreux.",
+                    "Plusieurs amas remaniés modifiés par l'irritation sont observés.",
+                    "Des placards altérés, bien irrités sont observés.",
+                    "Des remaniements irritatifs prononcés sont notés.",
+                    "Placards malpighiens conservés ou bien très irrités se côtoient.",
+                    "Des remaniements irritatifs, assez marqués, sont aussi constatés.",
+                    "Des amas très irrités sont rencontrés."
+                ]),
+                ("irritation+++", [
+                    "On rencontre des placards irrités, très nombreux.",
+                    "Des signes de souffrance marquée sont observés au sein du matériel épithélial.",
+                    "On note la présence de nombreuses modifications irritatives nettes.",
+                    "Des cellules modifiées, très nombreuses, de caractère bien irrité, sont présentes.",
+                    "On note la présence de nombreuses modifications irritatives nettes.",
+                    "Des cellules modifiées, très nombreuses, de caractère bien irrité, sont présentes.",
+                    "Placards malpighiens peu conservés, et groupements très irrités se côtoient.",
+                    "Présence de groupements nombreux, d'aspect bien irrité.",
+                    "On observe souvent la présence de plusieurs changements irritatifs.",
+                    "On constate la présence de très nombreux groupements irrités.",
+                    "On note la présence de nombreuses modifications irritatives nettes.",
+                    "On note plusieurs groupements de caractère bien irrité.",
+                    "Parmi les groupements épithéliaux, sont présents des placards nettement irrités, nombreux."
+                ]),
+                ("exocytose+", [
+                    "Des foyers d'exocytose sont observés.",
+                    "On retrouve quelques foyers d'exocytose.",
+                    "La desquamation épithéliale va présenter des foyers d'exocytose modérée.",
+                    "Les placards épithéliaux sont par endroits le siège d'une exocytose modérée.",
+                    "La desquamation épithéliale se caractérise par une exocytose modérée.",
+                    "La desquamation épithéliale est par endroits le siège d'une exocytose modérée.",
+                    "La desquamation épithéliale va présenter des foyers d'exocytose modérée.",
+                    "La population épithéliale est par endroits le siège d'une exocytose modérée.",
+                    "La population épithéliale est par endroits le siège d'une exocytose modérée.",
+                    "Quelques foyers d'exocytose sont constatés au sein des placards épithéliaux.",
+                    "Une exocytose peu marquée est retrouvée.",
+                    "La desquamation épithéliale est par endroits le siège d'une exocytose modérée.",
+                    "Quelques foyers d'exocytose sont notés.",
+                    "La population épithéliale est par endroits le siège d'une exocytose modérée.",
+                    "Une exocytose modérée est constatée."
+                ]),
+                ("exocytose++", [
+                    "La population épithéliale se caractérise par de l'exocytose.",
+                    "La desquamation épithéliale se caractérise par une exocytose assez marquée.",
+                    "Les placards épithéliaux sont par endroits le siège d'une exocytose.",
+                    "Une exocytose est constatée.",
+                    "Des foyers d'exocytose sont notés.",
+                    "La desquamation épithéliale va présenter des foyers d'exocytose assez franche.",
+                    "Des foyers d'exocytose sont constatés au sein des placards épithéliaux.",
+                    "Des foyers d'exocytose sont notés au sein de la composante épithéliale.",
+                    "La desquamation épithéliale est le siège d'une exocytose.",
+                    "La desquamation épithéliale va présenter des foyers d'exocytose.",
+                    "Une exocytose marquée est retrouvée.",
+                    "Les placards épithéliaux sont par endroits le siège d'une exocytose."
+                ]),
+                ("exocytose+++", ["Pas de phrase"]),
 
             ]
             },
@@ -800,16 +1270,106 @@ button_groups = [
             "sub_name": "Dystrophique",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("Dystrophique seul+", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Dystrophique seul++", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Dystrophique type Métaplasique", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Dystrophique type hyperplasie", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Dystrophique type hyperplasie + Métaplasie", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Métaplasie seule", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("Métaplasie immature", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("squames rares", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("squames++", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("squames anuclées+parakeratosiques", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("dystrophique seul+", [
+                    "Des modifications sont constatées, dystrophiques.",
+                    "Des changements dystrophiques sont observés.",
+                    "On observe des modifications de caractère dystrophique.",
+                    "On observe quelques modifications de caractère dystrophique.",
+                    "On observe quelques remaniements dystrophiques.",
+                    "Des remaniements dystrophiques sont constatés.",
+                    "Des modifications de caractère dystrophique sont notées."
+                ]),
+                ("dystrophique seul++", [
+                    "Des remaniements dystrophiques importants sont constatés.",
+                    "Des modifications de caractère dystrophique sont constatées, importantes.",
+                    "On observe des remaniements de caractère dystrophique.",
+                    "Des modifications de caractère dystrophique assez marquées sont notées.",
+                    "De franches modifications dystrophiques sont observées.",
+                    "D'importantes modifications sont constatées, de caractère dystrophique.",
+                    "Des modifications dystrophiques marquées sont constatées.",
+                    "Des changements dystrophiques prononcés sont constatés.",
+                    "On observe de franches modifications de caractère dystrophique."
+                ]),
+                ("métaplasie seule", [
+                    "Parmi les groupements épithéliaux, sont présents des placards métaplasiques.",
+                    "On constate la présence de groupements métaplasiques.",
+                    "A noter la présence de remaniements métaplasiques.",
+                    "Des amas métaplasiques sont rencontrés.",
+                    "On observe la présence de remaniements métaplasiques.",
+                    "On note la présence de remaniements de caractère métaplasique.",
+                    "On note la présence de modifications métaplasiques.",
+                    "Des cellules dystrophiques, de caractère métaplasique, sont présentes.",
+                    "Placards malpighiens et métaplasiques se côtoient.",
+                    "Des amas remaniés modifiés par la métaplasie sont observés."
+                ]),
+                ("métaplasie immature", [
+                    "Des cellules dystrophiques, de caractère métaplasique, immature pour certains, sont présentes.",
+                    "Placards malpighiens et métaplasiques se côtoient, quelques-uns de caractère immature.",
+                    "Des remaniements métaplasiques, parfois immatures, sont observés.",
+                    "Parmi les groupements épithéliaux, sont présents des placards métaplasiques, certains de caractère immature.",
+                    "Des placards en métaplasie sont observés, pour certains immatures.",
+                    "On note la présence de remaniements métaplasiques, partiellement immatures.",
+                    "Des amas métaplasiques sont rencontrés, dont un contingent immature.",
+                    "On observe la présence de remaniements métaplasiques.",
+                    "Des amas de caractère métaplasique sont rencontrés, dont un contingent immature.",
+                    "On note la présence de remaniements de caractère métaplasique, parfois immature.",
+                    "Des remaniements métaplasiques, certains de caractère immature, sont aussi constatés."
+                ]),
+                ("dystrophique type métaplasique", [
+                    "On observe quelques modifications de caractère dystrophique, métaplasique.",
+                    "Des remaniements dystrophiques métaplasiques sont constatés.",
+                    "Des modifications dystrophiques de type métaplasie sont observées.",
+                    "Des remaniements dystrophiques métaplasiques s'observent.",
+                    "Des modifications de caractère dystrophique, surtout métaplasiques, sont notées."
+                ]),
+                ("dystrophique type hyperplasie", [
+                    "Des modifications de caractère dystrophique, surtout hyperplasiques, sont notées.",
+                    "Des modifications dystrophiques de type hyperplasie sont observées.",
+                    "Des modifications dystrophiques, hyperplasiques sont constatées.",
+                    "On observe quelques modifications de caractère dystrophique, hyperplasique.",
+                    "Des remaniements dystrophiques hyperplasiques sont constatés.",
+                    "Des remaniements dystrophiques hyperplasiques s'observent.",
+                    "Des changements dystrophiques, en particulier de l'hyperplasie, sont constatés."
+                ]),
+                ("dystrophique metaplasie + hyperplasie", [
+                    "Des modifications de caractère dystrophique, comprenant des amas métaplasiques et hyperplasiques, sont notées.",
+                    "Des modifications dystrophiques, métaplasiques et hyperplasiques sont constatées.",
+                    "Des changements dystrophiques, métaplasiques et hyperplasiques, sont observés.",
+                    "On observe quelques remaniements de caractère dystrophique, consistant en métaplasie et hyperplasie.",
+                    "Des remaniements dystrophiques, mêlant métaplasie et hyperplasie s'observent.",
+                    "Des modifications de caractère dystrophique, à la fois hyperplasiques et métaplasiques, sont constatées.",
+                    "Des remaniements dystrophiques hyperplasiques et métaplasiques sont constatés.",
+                    "Les changements observés sont dystrophiques, métaplasiques et hyperplasiques."
+                ]),
+                ("squames rares", [
+                    "Des cellules squameuses sont observées, rares.",
+                    "Présence de quelques squames.",
+                    "De rares cellules squameuses sont rencontrées.",
+                    "Des squames dispersées sont notées.",
+                    "Des éléments squameux s'observent.",
+                    "On retrouve quelques éléments squameux.",
+                    "Des cellules squameuses assez rares sont présentes.",
+                    "La desquamation comporte de rares squames."
+                ]),
+                ("squames++", [
+                    "Des éléments squameux s'observent épars.",
+                    "De nombreuses cellules squameuses sont rencontrées.",
+                    "Des cellules squameuses sont observées.",
+                    "Présence de plusieurs squames.",
+                    "La desquamation comporte des squames.",
+                    "On retrouve des éléments squameux.",
+                    "Plusieurs squames dispersées sont notées."
+                ]),
+                ("squames anuclées + parakératosiques", [
+                    "Des éléments squameux parfois parakératosiques s'observent, épars.",
+                    "Présence de cellules anucléées et parakératosiques.",
+                    "On retrouve des éléments squameux, parakératosiques et anucléées.",
+                    "Des cellules squameuses anucléées ou parakératosiques sont observées.",
+                    "Des cellules squameuses, certaines parakératosiques sont présentes.",
+                    "Des cellules squameuses anucléées et parakératosiques sont rencontrées.",
+                    "La desquamation comporte des squames parakératosiques et anucléées."
+                ])
+
             ]
             }
         ]
@@ -824,7 +1384,14 @@ button_groups = [
             "sub_name": "RAS",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("OK", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])
+                ("OK", [
+                    "Conclusion : On ne retrouve pas de lésion intra-épithéliale ou de malignité au niveau de ce col.",
+                    "Conclusion : ce col ne présente pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Prélèvement sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Frottis ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Il n'y a pas de lésion intra-épithéliale, ni de malignité sur ce prélèvement.",
+                    "Conclusion : On n'observe pas de lésion intra-épithéliale ou de malignité sur ce col."
+                ])
             ]
             },
 
@@ -832,17 +1399,96 @@ button_groups = [
             "sub_name": "dystrophique",  # This is the new sub-name
             "bg_color": "lightgreen",  # You can assign a different color to the subcategory
             "buttons": [
-                ("ectropion", ["Leectropions prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("ectropion inflammatoire", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("ectropion metaplasique", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("ectropion inflammatoire metaplasique", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("ectropion minime inflammatoire metaplasique", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("ectropion minime", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("ectropion minime inflammatoire", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("ectropion minime metaplasique", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("col atrophique", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("col dystrophique", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "]),
-                ("col dystrophique atrophique", ["Les prélèvements adressés montrent:\n\n--sur le frottis exocervical/jonctionnel: \n\n--sur le frottis endocervical: "])  
+                ("ectropion", [
+                    "Conclusion : Col siège d'un ectropion. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect en faveur d'un ectropion, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Aspect d'ectropion. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Il s'agit d'un ectropion, sans lésion intra-épithéliale ni malignité."
+                ]),
+                ("ectropion inflammatoire", [
+                    "Conclusion : Aspect compatible avec un ectropion inflammatoire, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect cytologique d'ectropion inflammatoire. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence d'un ectropion inflammatoire, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Ces aspects correspondent à un ectropion inflammatoire, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect en faveur d'un ectropion inflammatoire, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Il s'agit d'un ectropion inflammatoire, sans lésion intra-épithéliale ni malignité."
+                ]),
+                ("ectropion metaplasique", [
+                    "Conclusion : Il s'agit d'un ectropion en métaplasie, sans lésion intraépithéliale, ni malignité.",
+                    "Conclusion : Ces aspects correspondent à un ectropion métaplasique, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect d'ectropion métaplasique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col siège d'un ectropion métaplasique, sans lésion intra-épithéliale, ni malignité.",
+                    "Conclusion : Aspect cytologique d'ectropion métaplasique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence d'un ectropion remanié, métaplasique, ne montrant pas de lésion intra-épithéliale ou de malignité."
+                ]),
+
+                ("ectropion minime", [
+                    "Conclusion : Aspect en faveur d'un ectropion minime, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Aspect compatible avec un petit ectropion, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col siège d'un ectropion minime, sans lésion intra-épithéliale, ni malignité.",
+                    "Conclusion : Aspect cytologique d'ectropion minime. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Il s'agit d'un ectropion minime, sans lésion intraépithéliale, ni malignité."
+                ]),
+                ("ectropion minime inflammatoire", [
+                    "Conclusion : Présence d'un ectropion minime inflammatoire, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect d'ectropion minime inflammatoire. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Ces aspects correspondent à un léger ectropion inflammatoire, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Il s'agit d'un petit ectropion inflammatoire, sans lésion intraépithéliale, ni malignité.",
+                    "Conclusion : Col siège d'un petit ectropion inflammatoire. Absence de lésion intra-épithéliale ou de malignité."
+                ]),
+                ("ectropion minime métaplasique", [
+                    "Conclusion : Col siège d'un petit ectropion métaplasique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence d'un ectropion minime remanié, métaplasique, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Ces aspects correspondent à un léger ectropion métaplasique, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col siège d'un ectropion minime métaplasique, sans lésion intra-épithéliale, ni malignité.",
+                    "Conclusion : Il s'agit d'un petit ectropion en métaplasie, sans lésion intraépithéliale, ni malignité."
+                ]),
+                ("ectropion inflammatoire metaplasique", [
+                    "Conclusion : Il s'agit d'un ectropion inflammatoire et métaplasique, sans lésion intraépithéliale, ni malignité.",
+                    "Conclusion : Col siège d'un ectropion remanié inflammatoire et métaplasique, sans lésion intra-épithéliale, ni malignité.",
+                    "Conclusion : Présence d'un ectropion inflammatoire et métaplasique, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Ces aspects correspondent à un ectropion remanié, métaplasique et inflammatoire, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col siège d'un ectropion inflammatoire, remanié par la métaplasie. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect compatible avec un ectropion en remaniement métaplasique et inflammatoire, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect cytologique d'ectropion métaplasique et inflammatoire. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect en faveur d'un ectropion inflammatoire et métaplasique, sans lésion intra-épithéliale ou malignité."
+                ]),
+                ("ectropion minime inflammatoire metaplasique", [
+                    "Conclusion : Présence d'un ectropion minime inflammatoire et métaplasique, ne montrant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col siège d'un petit ectropion inflammatoire, remanié par la métaplasie. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col siège d'un petit ectropion remanié inflammatoire et métaplasique, sans lésion intra-épithéliale, ni malignité.",
+                    "Conclusion : Ces aspects correspondent à un ectropion minime remanié, métaplasique et inflammatoire, ne présentant pas de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect d'ectropion minime inflammatoire et métaplasique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Il s'agit d'un petit ectropion inflammatoire et métaplasique, sans lésion intraépithéliale, ni malignité.",
+                    "Conclusion : Aspect en faveur d'un petit ectropion inflammatoire et métaplasique, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Aspect cytologique d'ectropion minime métaplasique et inflammatoire. Absence de lésion intra-épithéliale ou de malignité."
+                ]),
+                ("col atrophique", [
+                    "Conclusion : Ces aspects sont ceux d'un frottis atrophique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Modifications de caractère atrophique, sans lésion intraépithéliale ou malignité.",
+                    "Conclusion : Aspect atrophique, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Frottis atrophique, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Aspect d'atrophie. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col atrophique. Absence de lésion intra-épithéliale ou de malignité."
+                ]),
+                ("col dystrophique", [
+                    "Conclusion : Présence de remaniements dystrophiques. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col dystrophique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Présence de modifications dystrophiques. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Aspect de col dystrophique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Les modifications observées sur ce col sont de caractère dystrophique, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Frottis dystrophique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Ces aspects sont ceux d'un col dystrophique. Absence de lésion intra-épithéliale ou de malignité."
+                ]),
+                ("col dystrophique atrophique", [
+                    "Conclusion : Frottis dystrophique de la ménopause. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Les modifications constatées sont de caractère dystrophique, observables au cours de la ménopause, sans lésion intra-épithéliale ou malignité sur ce col.",
+                    "Conclusion : Col remanié, dystrophique de la ménopause. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col de caractère remanié, dystrophique de ménopause. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Les modifications observées sur ce col sont de caractère dystrophique, compatibles avec l'atrophie, sans lésion intra-épithéliale ou malignité.",
+                    "Conclusion : Col atrophique, de caractère dystrophique. Absence de lésion intra-épithéliale ou de malignité.",
+                    "Conclusion : Col dystrophique de la ménopause, ne montrant pas de lésion intra-épithéliale ou de malignité."
+                ])
             ]
             },
 

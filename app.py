@@ -55,7 +55,7 @@ def auto_save():
 
 # Function to insert predefined text into the text editor when a menu option is selected
 def insert_text(text):
-    text_editor.insert(tk.END, text + "\n")
+    text_editor.insert(tk.INSERT, text)  # Insère à la position du curseur
 
 # Function to create the dropdown menu for each button
 def show_dropdown(button, options):
